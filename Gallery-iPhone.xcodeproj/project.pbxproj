@@ -17,12 +17,10 @@
 		973200D617BE56B800D5E0E8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 973200D517BE56B800D5E0E8 /* Default@2x.png */; };
 		973200D817BE56B800D5E0E8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 973200D717BE56B800D5E0E8 /* Default-568h@2x.png */; };
 		973200DB17BE56B800D5E0E8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973200D917BE56B800D5E0E8 /* MainStoryboard.storyboard */; };
-		973200DE17BE56B800D5E0E8 /* GalleryFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973200DD17BE56B800D5E0E8 /* GalleryFirstViewController.m */; };
-		973200E017BE56B800D5E0E8 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 973200DF17BE56B800D5E0E8 /* first.png */; };
-		973200E217BE56B800D5E0E8 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 973200E117BE56B800D5E0E8 /* first@2x.png */; };
-		973200E517BE56B800D5E0E8 /* GallerySecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973200E417BE56B800D5E0E8 /* GallerySecondViewController.m */; };
-		973200E717BE56B800D5E0E8 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 973200E617BE56B800D5E0E8 /* second.png */; };
-		973200E917BE56B800D5E0E8 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 973200E817BE56B800D5E0E8 /* second@2x.png */; };
+		973200F117BE579D00D5E0E8 /* GalleryExhibitionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973200F017BE579D00D5E0E8 /* GalleryExhibitionsViewController.m */; };
+		973200F517BE57C600D5E0E8 /* GalleryArtistsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973200F417BE57C600D5E0E8 /* GalleryArtistsViewController.m */; };
+		973200F917BE58A300D5E0E8 /* ExhibitionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 973200F817BE58A300D5E0E8 /* ExhibitionObject.m */; };
+		973200FC17BE64BE00D5E0E8 /* ActivityOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973200FB17BE64BD00D5E0E8 /* ActivityOverlayViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,14 +38,14 @@
 		973200D517BE56B800D5E0E8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		973200D717BE56B800D5E0E8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		973200DA17BE56B800D5E0E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		973200DC17BE56B800D5E0E8 /* GalleryFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GalleryFirstViewController.h; sourceTree = "<group>"; };
-		973200DD17BE56B800D5E0E8 /* GalleryFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GalleryFirstViewController.m; sourceTree = "<group>"; };
-		973200DF17BE56B800D5E0E8 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		973200E117BE56B800D5E0E8 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		973200E317BE56B800D5E0E8 /* GallerySecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GallerySecondViewController.h; sourceTree = "<group>"; };
-		973200E417BE56B800D5E0E8 /* GallerySecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GallerySecondViewController.m; sourceTree = "<group>"; };
-		973200E617BE56B800D5E0E8 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		973200E817BE56B800D5E0E8 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		973200EF17BE579D00D5E0E8 /* GalleryExhibitionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryExhibitionsViewController.h; sourceTree = "<group>"; };
+		973200F017BE579D00D5E0E8 /* GalleryExhibitionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryExhibitionsViewController.m; sourceTree = "<group>"; };
+		973200F317BE57C600D5E0E8 /* GalleryArtistsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryArtistsViewController.h; sourceTree = "<group>"; };
+		973200F417BE57C600D5E0E8 /* GalleryArtistsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryArtistsViewController.m; sourceTree = "<group>"; };
+		973200F717BE58A300D5E0E8 /* ExhibitionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExhibitionObject.h; sourceTree = "<group>"; };
+		973200F817BE58A300D5E0E8 /* ExhibitionObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExhibitionObject.m; sourceTree = "<group>"; };
+		973200FA17BE64BD00D5E0E8 /* ActivityOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityOverlayViewController.h; sourceTree = "<group>"; };
+		973200FB17BE64BD00D5E0E8 /* ActivityOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityOverlayViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,17 +92,8 @@
 		973200C717BE56B700D5E0E8 /* Gallery-iPhone */ = {
 			isa = PBXGroup;
 			children = (
-				973200D017BE56B800D5E0E8 /* GalleryAppDelegate.h */,
-				973200D117BE56B800D5E0E8 /* GalleryAppDelegate.m */,
-				973200D917BE56B800D5E0E8 /* MainStoryboard.storyboard */,
-				973200DC17BE56B800D5E0E8 /* GalleryFirstViewController.h */,
-				973200DD17BE56B800D5E0E8 /* GalleryFirstViewController.m */,
-				973200DF17BE56B800D5E0E8 /* first.png */,
-				973200E117BE56B800D5E0E8 /* first@2x.png */,
-				973200E317BE56B800D5E0E8 /* GallerySecondViewController.h */,
-				973200E417BE56B800D5E0E8 /* GallerySecondViewController.m */,
-				973200E617BE56B800D5E0E8 /* second.png */,
-				973200E817BE56B800D5E0E8 /* second@2x.png */,
+				973200F617BE588500D5E0E8 /* Domain */,
+				973200F217BE57A500D5E0E8 /* GUI */,
 				973200C817BE56B800D5E0E8 /* Supporting Files */,
 			);
 			path = "Gallery-iPhone";
@@ -122,6 +111,31 @@
 				973200D717BE56B800D5E0E8 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		973200F217BE57A500D5E0E8 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				973200EF17BE579D00D5E0E8 /* GalleryExhibitionsViewController.h */,
+				973200F017BE579D00D5E0E8 /* GalleryExhibitionsViewController.m */,
+				973200D017BE56B800D5E0E8 /* GalleryAppDelegate.h */,
+				973200D117BE56B800D5E0E8 /* GalleryAppDelegate.m */,
+				973200D917BE56B800D5E0E8 /* MainStoryboard.storyboard */,
+				973200F317BE57C600D5E0E8 /* GalleryArtistsViewController.h */,
+				973200F417BE57C600D5E0E8 /* GalleryArtistsViewController.m */,
+				973200FA17BE64BD00D5E0E8 /* ActivityOverlayViewController.h */,
+				973200FB17BE64BD00D5E0E8 /* ActivityOverlayViewController.m */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		973200F617BE588500D5E0E8 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				973200F717BE58A300D5E0E8 /* ExhibitionObject.h */,
+				973200F817BE58A300D5E0E8 /* ExhibitionObject.m */,
+			);
+			name = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,10 +195,6 @@
 				973200D617BE56B800D5E0E8 /* Default@2x.png in Resources */,
 				973200D817BE56B800D5E0E8 /* Default-568h@2x.png in Resources */,
 				973200DB17BE56B800D5E0E8 /* MainStoryboard.storyboard in Resources */,
-				973200E017BE56B800D5E0E8 /* first.png in Resources */,
-				973200E217BE56B800D5E0E8 /* first@2x.png in Resources */,
-				973200E717BE56B800D5E0E8 /* second.png in Resources */,
-				973200E917BE56B800D5E0E8 /* second@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +207,10 @@
 			files = (
 				973200CE17BE56B800D5E0E8 /* main.m in Sources */,
 				973200D217BE56B800D5E0E8 /* GalleryAppDelegate.m in Sources */,
-				973200DE17BE56B800D5E0E8 /* GalleryFirstViewController.m in Sources */,
-				973200E517BE56B800D5E0E8 /* GallerySecondViewController.m in Sources */,
+				973200F117BE579D00D5E0E8 /* GalleryExhibitionsViewController.m in Sources */,
+				973200F517BE57C600D5E0E8 /* GalleryArtistsViewController.m in Sources */,
+				973200F917BE58A300D5E0E8 /* ExhibitionObject.m in Sources */,
+				973200FC17BE64BE00D5E0E8 /* ActivityOverlayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
