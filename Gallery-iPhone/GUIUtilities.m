@@ -47,7 +47,7 @@
                          completion:^(BOOL finished) {
                              if(finished) {
                                  [UIView animateWithDuration:0.25
-                                                       delay:2
+                                                       delay:3
                                                      options:UIViewAnimationOptionCurveLinear | UIViewAnimationOptionAllowUserInteraction
                                                   animations:^(void) {
                                                       [label setAlpha:0.0];
