@@ -29,6 +29,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]
+                                  initWithTitle:@"Share"
+                                  style:UIBarButtonItemStyleBordered
+                                  target:self
+                                  action:@selector(shareAction)];
+    self.navigationItem.rightBarButtonItem = rightItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,4 +44,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)shareAction
+{
+    NSLog(@"shareAction");
+}
+
+- (IBAction)openPageAction:(id)sender {
+    NSLog(@"openPageAction");
+}
+
+- (IBAction)catalogueAction:(id)sender {
+    NSLog(@"catalogueAction");
+}
 @end
