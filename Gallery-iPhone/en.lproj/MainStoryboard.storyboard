@@ -18,11 +18,12 @@
                     <connections>
                         <segue destination="5QY-id-jVW" kind="relationship" relationship="viewControllers" id="caL-9n-Zn6"/>
                         <segue destination="hIF-0v-c3D" kind="relationship" relationship="viewControllers" id="W9G-I5-UqP"/>
+                        <segue destination="AhS-Tt-Q2j" kind="relationship" relationship="viewControllers" id="mM8-on-V1l"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6" y="326"/>
+            <point key="canvasLocation" x="-58" y="630"/>
         </scene>
         <!--Gallery Exhibitions View Controller-->
         <scene sceneID="bHy-gH-eDj">
@@ -258,10 +259,112 @@
             </objects>
             <point key="canvasLocation" x="773" y="596"/>
         </scene>
+        <!--Gallery About View Controller-->
+        <scene sceneID="OlS-6s-MpZ">
+            <objects>
+                <viewController id="6Fk-Vx-Fps" customClass="GalleryAboutViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UCs-EM-UBl">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wrf-d6-hlS"/>
+                    <connections>
+                        <segue destination="g0s-Cf-fQQ" kind="push" identifier="mapViewSegueId" id="y8z-ns-dLh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Fh-b8-b0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1316" y="1333"/>
+        </scene>
+        <!--Gallery Map View Controller-->
+        <scene sceneID="Nr6-z7-fO2">
+            <objects>
+                <viewController id="g0s-Cf-fQQ" customClass="GalleryMapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kXj-qq-mjC">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r7r-IO-HSh"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="r7r-IO-HSh" firstAttribute="leading" secondItem="kXj-qq-mjC" secondAttribute="leading" type="default" id="NGw-BB-BLr"/>
+                            <constraint firstItem="r7r-IO-HSh" firstAttribute="bottom" secondItem="kXj-qq-mjC" secondAttribute="bottom" type="default" id="gGa-PU-udT"/>
+                            <constraint firstItem="r7r-IO-HSh" firstAttribute="top" secondItem="kXj-qq-mjC" secondAttribute="top" type="default" id="hFX-B8-xfO"/>
+                            <constraint firstItem="r7r-IO-HSh" firstAttribute="trailing" secondItem="kXj-qq-mjC" secondAttribute="trailing" type="default" id="kCJ-sh-Y6X"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yOQ-P8-l22"/>
+                    <connections>
+                        <outlet property="mapView" destination="r7r-IO-HSh" id="hND-Vz-kQr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LUl-ie-dUp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1805" y="1333"/>
+        </scene>
+        <!--Navigation Controller - About-->
+        <scene sceneID="JYe-g3-XLC">
+            <objects>
+                <navigationController id="AhS-Tt-Q2j" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About" image="Default.png" id="6zU-Jq-iJU"/>
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="QOS-FV-wv3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6Fk-Vx-Fps" kind="relationship" relationship="rootViewController" id="YLa-4Z-wAw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wCw-f2-gNt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="1333"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Default.png" width="320" height="480"/>
     </resources>
+    <classes>
+        <class className="GalleryAboutViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryAboutViewController.h"/>
+        </class>
+        <class className="GalleryArtistsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryArtistsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="artistsTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="GalleryExhibitionDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryExhibitionDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="catalogueAction:"/>
+                <relationship kind="action" name="openPageAction:"/>
+                <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="GalleryExhibitionsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryExhibitionsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="exhibitionsTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="GalleryMapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryMapViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

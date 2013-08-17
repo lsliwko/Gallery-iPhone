@@ -42,6 +42,8 @@
 		9738825217BFA05A00CCA172 /* FadeCustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9738825117BFA05A00CCA172 /* FadeCustomSegue.m */; };
 		9738825517BFB8D800CCA172 /* GUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9738825417BFB8D700CCA172 /* GUIUtilities.m */; };
 		9738825717BFBC1F00CCA172 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9738825617BFBC1F00CCA172 /* AudioToolbox.framework */; };
+		973CEA8D17BFEB2100116F7C /* GalleryAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973CEA8C17BFEB2100116F7C /* GalleryAboutViewController.m */; };
+		973CEA9017BFEDD200116F7C /* GalleryMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973CEA8F17BFEDD200116F7C /* GalleryMapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +107,10 @@
 		9738825317BFB8D700CCA172 /* GUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUIUtilities.h; sourceTree = "<group>"; };
 		9738825417BFB8D700CCA172 /* GUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUIUtilities.m; sourceTree = "<group>"; };
 		9738825617BFBC1F00CCA172 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		973CEA8B17BFEB2100116F7C /* GalleryAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryAboutViewController.h; sourceTree = "<group>"; };
+		973CEA8C17BFEB2100116F7C /* GalleryAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryAboutViewController.m; sourceTree = "<group>"; };
+		973CEA8E17BFEDD200116F7C /* GalleryMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryMapViewController.h; sourceTree = "<group>"; };
+		973CEA8F17BFEDD200116F7C /* GalleryMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryMapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +204,10 @@
 				9738825117BFA05A00CCA172 /* FadeCustomSegue.m */,
 				9738825317BFB8D700CCA172 /* GUIUtilities.h */,
 				9738825417BFB8D700CCA172 /* GUIUtilities.m */,
+				973CEA8B17BFEB2100116F7C /* GalleryAboutViewController.h */,
+				973CEA8C17BFEB2100116F7C /* GalleryAboutViewController.m */,
+				973CEA8E17BFEDD200116F7C /* GalleryMapViewController.h */,
+				973CEA8F17BFEDD200116F7C /* GalleryMapViewController.m */,
 			);
 			name = GUI;
 			sourceTree = "<group>";
@@ -353,6 +363,8 @@
 				9738824A17BED2C100CCA172 /* GalleryExhibitionDetailViewController.m in Sources */,
 				9738825217BFA05A00CCA172 /* FadeCustomSegue.m in Sources */,
 				9738825517BFB8D800CCA172 /* GUIUtilities.m in Sources */,
+				973CEA8D17BFEB2100116F7C /* GalleryAboutViewController.m in Sources */,
+				973CEA9017BFEDD200116F7C /* GalleryMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

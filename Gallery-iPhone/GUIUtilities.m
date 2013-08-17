@@ -38,23 +38,25 @@
         [weakSelf.view addSubview:label];
         
         [label setAlpha:0.0];
-        [UIView animateWithDuration:0.25
+        [UIView animateWithDuration:0.35
                               delay:0
                             options:UIViewAnimationOptionCurveLinear | UIViewAnimationOptionAllowUserInteraction
                          animations:^(void) {
-                             [label setAlpha:0.8];
+                             [label setAlpha:0.7];
                          }
                          completion:^(BOOL finished) {
                              if(finished) {
-                                 [UIView animateWithDuration:0.25
+                                 [UIView animateWithDuration:0.15
                                                        delay:2.5
                                                      options:UIViewAnimationOptionCurveLinear | UIViewAnimationOptionAllowUserInteraction
                                                   animations:^(void) {
                                                       [label setAlpha:0.0];
                                                   }
                                                   completion:^(BOOL finished) {
-                                                      if(finished)
+                                                      if(finished) {
                                                           NSLog(@"Message fadedIn & fadedOut");
+                                                          [label removeFromSuperview];
+                                                      }
                                                   }];
                              }
                          }];

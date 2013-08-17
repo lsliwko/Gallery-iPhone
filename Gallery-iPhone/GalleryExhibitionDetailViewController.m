@@ -36,6 +36,8 @@
                                   target:self
                                   action:@selector(shareAction)];
     self.navigationItem.rightBarButtonItem = rightItem;
+    
+    self.title  = self.exhibitionObject.title;
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,6 +48,7 @@
 
 - (void)shareAction
 {
+    //TODO implement
     NSLog(@"shareAction");
 }
 
