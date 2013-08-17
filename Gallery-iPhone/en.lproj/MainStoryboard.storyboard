@@ -9,7 +9,6 @@
             <objects>
                 <tabBarController id="4" sceneMemberID="viewController">
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
-                    <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="5">
                         <rect key="frame" x="0.0" y="431" width="320" height="49"/>
@@ -17,20 +16,20 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="uO6-3g-zEZ" kind="relationship" relationship="viewControllers" id="caL-9n-Zn6"/>
-                        <segue destination="CZ3-zZ-iBV" kind="relationship" relationship="viewControllers" id="W9G-I5-UqP"/>
+                        <segue destination="5QY-id-jVW" kind="relationship" relationship="viewControllers" id="caL-9n-Zn6"/>
+                        <segue destination="hIF-0v-c3D" kind="relationship" relationship="viewControllers" id="W9G-I5-UqP"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6" y="326"/>
         </scene>
-        <!--Gallery Exhibitions View Controller - Exhibitions-->
+        <!--Gallery Exhibitions View Controller-->
         <scene sceneID="bHy-gH-eDj">
             <objects>
                 <tableViewController id="uO6-3g-zEZ" customClass="GalleryExhibitionsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="73" sectionHeaderHeight="22" sectionFooterHeight="22" id="2tO-lv-pLu">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -70,34 +69,53 @@
                                 <constraints>
                                     <constraint firstItem="kTR-UR-Tbb" firstAttribute="leading" secondItem="4VY-y1-VEd" secondAttribute="leading" type="default" id="2cE-bv-5pi"/>
                                     <constraint firstItem="4VY-y1-VEd" firstAttribute="top" secondItem="uJs-T2-myd" secondAttribute="top" type="default" id="Dht-Ud-gZR"/>
-                                    <constraint firstItem="kTR-UR-Tbb" firstAttribute="bottom" secondItem="uJs-T2-myd" secondAttribute="bottom" type="default" id="OqC-g8-xVj"/>
                                     <constraint firstItem="uJs-T2-myd" firstAttribute="leading" secondItem="lHP-ha-KF4" secondAttribute="leading" constant="5" id="Q2t-2d-b6e"/>
                                     <constraint firstItem="uJs-T2-myd" firstAttribute="centerY" secondItem="lHP-ha-KF4" secondAttribute="centerY" type="default" id="he5-t6-N7a"/>
                                     <constraint firstItem="kTR-UR-Tbb" firstAttribute="trailing" secondItem="4VY-y1-VEd" secondAttribute="trailing" type="default" id="l2m-H5-BP0"/>
                                     <constraint firstItem="4VY-y1-VEd" firstAttribute="leading" secondItem="lHP-ha-KF4" secondAttribute="leading" constant="70" id="nrQ-lu-mhF"/>
+                                    <constraint firstItem="kTR-UR-Tbb" firstAttribute="top" secondItem="lHP-ha-KF4" secondAttribute="top" constant="29" id="zjn-Sm-9wz"/>
                                 </constraints>
+                                <connections>
+                                    <segue destination="TOd-rW-SKo" kind="custom" identifier="exhibitionDetailViewSegueId" customClass="FadeCustomSegue" trigger="accessoryAction" id="hYw-EZ-boU"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="uO6-3g-zEZ" id="nn3-4C-CW6"/>
-                            <outlet property="delegate" destination="uO6-3g-zEZ" id="UL5-Ud-PyH"/>
+                            <outlet property="dataSource" destination="uO6-3g-zEZ" id="fJn-JB-2Ch"/>
+                            <outlet property="delegate" destination="uO6-3g-zEZ" id="s7A-x5-zBR"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Exhibitions" image="Default.png" id="MYi-fM-Tpb"/>
+                    <navigationItem key="navigationItem" id="ggQ-ii-C5d"/>
                     <connections>
                         <outlet property="exhibitionsTableView" destination="2tO-lv-pLu" id="1Z6-yj-NQO"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MfD-O7-WXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarItem title="Exhibitions" image="Default.png" id="UhU-pS-IIh"/>
             </objects>
-            <point key="canvasLocation" x="773" y="-81"/>
+            <point key="canvasLocation" x="1299" y="-81"/>
         </scene>
-        <!--Gallery Artists View Controller - Artists-->
+        <!--Gallery Exhibition Detail View Controller-->
+        <scene sceneID="Dfd-L8-E4C">
+            <objects>
+                <viewController id="TOd-rW-SKo" customClass="GalleryExhibitionDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2iC-Pn-WkR">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qJR-F3-CCk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HgP-z0-kJE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1805" y="-81"/>
+        </scene>
+        <!--Gallery Artists View Controller-->
         <scene sceneID="xfD-Td-npj">
             <objects>
                 <tableViewController id="CZ3-zZ-iBV" customClass="GalleryArtistsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="iSc-bA-dYK">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -116,12 +134,54 @@
                             <outlet property="delegate" destination="CZ3-zZ-iBV" id="Chf-Am-1l4"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Artists" image="Default.png" id="ciC-eo-TI6"/>
+                    <navigationItem key="navigationItem" id="EDg-6e-ZsD"/>
                     <connections>
                         <outlet property="artistsTableView" destination="iSc-bA-dYK" id="o1Z-kH-zFI"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gzU-A5-8IV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1299" y="596"/>
+        </scene>
+        <!--Navigation Controller - Exhibitions-->
+        <scene sceneID="Xog-af-DwS">
+            <objects>
+                <navigationController id="5QY-id-jVW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Exhibitions" image="Default.png" id="MYi-fM-Tpb"/>
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="izo-zS-W2L">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uO6-3g-zEZ" kind="relationship" relationship="rootViewController" id="zVe-bb-fFs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j7x-Z8-wmf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773" y="-81"/>
+        </scene>
+        <!--Navigation Controller - Artists-->
+        <scene sceneID="ekp-zm-LAe">
+            <objects>
+                <navigationController id="hIF-0v-c3D" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Artists" image="Default.png" id="ciC-eo-TI6"/>
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="k06-Sk-yH9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CZ3-zZ-iBV" kind="relationship" relationship="rootViewController" id="fXB-mj-xk4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JPn-MJ-52e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="773" y="596"/>
         </scene>
@@ -135,6 +195,9 @@
             <relationships>
                 <relationship kind="outlet" name="artistsTableView" candidateClass="UITableView"/>
             </relationships>
+        </class>
+        <class className="GalleryExhibitionDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryExhibitionDetailViewController.h"/>
         </class>
         <class className="GalleryExhibitionsViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryExhibitionsViewController.h"/>
