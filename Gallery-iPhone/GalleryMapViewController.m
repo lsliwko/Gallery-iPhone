@@ -8,6 +8,8 @@
 
 #import "GalleryMapViewController.h"
 #import <MapKit/MapKit.h>
+#import "GallerySettingsManager.h"
+
 
 @interface GalleryMapViewController () {
 
@@ -45,16 +47,13 @@
     
     self.title  = @"Map";
     
-    CLLocationCoordinate2D location;
-    location.latitude = 51.480153;
-    location.longitude= -0.169966;
+    CLLocationCoordinate2D location = [[GallerySettingsManager sharedManager] locationCoordinates];
     
     // Add the annotation to our map view
     point = [[MKPointAnnotation alloc] init];
     point.coordinate = location;
-    point.title = @"H U A";
-    point.subtitle = @"Gallery";
-    
+    point.title = [[GallerySettingsManager sharedManager] locationTitle];
+    point.subtitle = [[GallerySettingsManager sharedManager] locationSubtitle];
     [self.mapView addAnnotation:point];
 }
 

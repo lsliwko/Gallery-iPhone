@@ -10,6 +10,7 @@
 #import <MessageUI/MessageUI.h>
 #import <MessageUI/MFMailComposeViewController.h>
 #import "GUIUtilities.h"
+#import "GallerySettingsManager.h"
 
 @interface GalleryAboutViewController ()
 
@@ -38,6 +39,13 @@
                                   action:@selector(mapAction)];
     self.navigationItem.rightBarButtonItem = rightItem;
     
+    
+    NSString *filePath = [[GallerySettingsManager sharedManager] aboutPageFilePath];
+    NSData *htmlData = [NSData dataWithContentsOfFile:filePath];
+    if (htmlData) {
+        [self.webView loadData:htmlData MIMEType:@"text/html" textEncodingName:@"UTF-8" baseURL:[NSURL URLWithString:@"http://iphoneincubator.com"]];
+    }
+    
     self.title  = @"About";
 }
 
@@ -55,6 +63,8 @@
 }
 
 - (IBAction)contactAction:(id)sender {
+    NSString *email = [[GallerySettingsManager sharedManager] email];
+    
     /*
     NSLog(@"contactAction");
     
@@ -62,7 +72,7 @@
     NSString *subject = [NSString stringWithFormat:@""];
     
     // define email address
-    NSString *mail = [NSString stringWithFormat:@"info@hua-gallery.com"];
+    NSString *mail = [NSString stringWithFormat:email];
     
     // create the URL
     NSURL *url = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"mailto:?to=%@&subject=%@",
@@ -79,7 +89,7 @@
         
         [emailController setSubject:@""];
         [emailController setMessageBody:@"" isHTML:YES];
-        [emailController setToRecipients:[NSArray arrayWithObjects:@"info@hua-gallery.com", nil]];
+        [emailController setToRecipients:[NSArray arrayWithObjects:email, nil]];
 
         [self presentViewController:emailController animated:YES completion:nil];
     }
@@ -104,5 +114,9 @@
 
 - (IBAction)openPageAction:(id)sender {
     NSLog(@"openPageAction");
+    
+    NSString *homepageUrl   = [[GallerySettingsManager sharedManager] homepageUrl];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:homepageUrl]];
 }
+
 @end

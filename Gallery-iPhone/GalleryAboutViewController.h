@@ -11,6 +11,7 @@
 
 @interface GalleryAboutViewController : UIViewController <MFMailComposeViewControllerDelegate>
 
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 - (IBAction)contactAction:(id)sender;
 - (IBAction)openPageAction:(id)sender;
 

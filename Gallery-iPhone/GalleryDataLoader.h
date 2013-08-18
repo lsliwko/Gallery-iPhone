@@ -1,13 +1,13 @@
 //
-//  HUAGalleryDataLoader.h
+//  GalleryDataLoader.h
 //  Gallery-iPhone
 //
-//  Created by Leszek Sliwko on 17/08/2013.
+//  Created by Leszek Sliwko on 18/08/2013.
 //  Copyright (c) 2013 Leszek Sliwko. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface HUAGalleryDataLoader : NSObject
+@interface GalleryDataLoader : NSObject
 
 @end
