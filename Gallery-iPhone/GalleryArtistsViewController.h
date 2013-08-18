@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GalleryArtistsViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+@interface GalleryArtistsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UITableView *artistsTableView;
 @end

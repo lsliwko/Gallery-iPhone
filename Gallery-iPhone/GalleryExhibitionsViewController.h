@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GalleryExhibitionsViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
+@interface GalleryExhibitionsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *exhibitionsTableView;
 @property (strong) NSMutableArray *exhibitions;

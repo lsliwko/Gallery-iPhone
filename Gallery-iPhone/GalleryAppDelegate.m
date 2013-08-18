@@ -17,7 +17,8 @@
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"menubar.png"] forBarMetrics:UIBarMetricsDefault];
     [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tapbar.png"]];
     [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar-active.png"]];
-    //[[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tapbar.png"] forBarMetrics:UIBarMetricsDefault];
+    [[UITabBar appearance] setSelectedImageTintColor:[UIColor whiteColor]];
+
     return YES;
 }
 							

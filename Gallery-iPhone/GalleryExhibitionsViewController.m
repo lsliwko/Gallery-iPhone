@@ -23,9 +23,9 @@
 
 @synthesize exhibitions = _exhibitions;
 
-- (id)initWithStyle:(UITableViewStyle)style
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithStyle:style];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
     }
@@ -43,6 +43,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     self.title  = @"Exhibitions";
+    //self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.png"]];
     
     dataLoaded = NO;
     
@@ -234,7 +235,7 @@
     
     if ([segue.identifier isEqualToString:@"exhibitionDetailViewSegueId"])
     {
-        ExhibitionObject *exhibitionObject = [self.exhibitions objectAtIndex:[self.tableView indexPathForSelectedRow].row];
+        ExhibitionObject *exhibitionObject = [self.exhibitions objectAtIndex:[self.exhibitionsTableView indexPathForSelectedRow].row];
      
         GalleryExhibitionDetailViewController *viewController = [segue destinationViewController];
         viewController.exhibitionObject = exhibitionObject;
