@@ -29,11 +29,13 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 
+    NSString *path = [[NSBundle mainBundle] bundlePath];
+    NSURL *baseURL = [NSURL fileURLWithPath:path];
     
     NSString *filePath = [[GallerySettingsManager sharedManager] aboutPageFilePath];
     NSData *htmlData = [NSData dataWithContentsOfFile:filePath];
     if (htmlData) {
-        [self.webView loadData:htmlData MIMEType:@"text/html" textEncodingName:@"UTF-8" baseURL:[NSURL URLWithString:nil]];
+        [self.webView loadData:htmlData MIMEType:@"text/html" textEncodingName:@"UTF-8" baseURL:baseURL];
     }
     
     self.title  = @"About";

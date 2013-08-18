@@ -23,6 +23,17 @@
 		970C35AA17C146BB003B3242 /* arrow-simple-01-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C35A817C146BB003B3242 /* arrow-simple-01-white@2x.png */; };
 		970C35B117C14AD0003B3242 /* arrow-box-out-right-mini-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C35AF17C14ACF003B3242 /* arrow-box-out-right-mini-white.png */; };
 		970C35B217C14AD0003B3242 /* arrow-box-out-right-mini-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C35B017C14AD0003B3242 /* arrow-box-out-right-mini-white@2x.png */; };
+		970C35B517C14BF2003B3242 /* bald-man-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C35B317C14BF1003B3242 /* bald-man-white.png */; };
+		970C35B617C14BF2003B3242 /* bald-man-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C35B417C14BF2003B3242 /* bald-man-white@2x.png */; };
+		970C35BA17C15106003B3242 /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 970C35B917C15106003B3242 /* about.jpg */; };
+		970C35BC17C15238003B3242 /* hua-logo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 970C35BB17C15238003B3242 /* hua-logo2.jpg */; };
+		970C35C017C15751003B3242 /* line-decorator.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C35BF17C15751003B3242 /* line-decorator.png */; };
+		970C384617C15D02003B3242 /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C384417C15D02003B3242 /* tabbar.png */; };
+		970C384717C15D02003B3242 /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C384517C15D02003B3242 /* tabbar@2x.png */; };
+		970C384A17C15D21003B3242 /* menubar.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C384817C15D21003B3242 /* menubar.png */; };
+		970C384B17C15D21003B3242 /* menubar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C384917C15D21003B3242 /* menubar@2x.png */; };
+		970C385217C15F99003B3242 /* tabbar-active.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C385017C15F98003B3242 /* tabbar-active.png */; };
+		970C385317C15F99003B3242 /* tabbar-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C385117C15F99003B3242 /* tabbar-active@2x.png */; };
 		970CBDAF17C0BBF7003B3242 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970CBDAE17C0BBF7003B3242 /* MessageUI.framework */; };
 		970CBDB617C0C6A4003B3242 /* GallerySettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 970CBDB517C0C6A4003B3242 /* GallerySettingsManager.m */; };
 		970CBDB917C0C6B9003B3242 /* GalleryDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 970CBDB817C0C6B9003B3242 /* GalleryDataLoader.m */; };
@@ -86,6 +97,17 @@
 		970C35A817C146BB003B3242 /* arrow-simple-01-white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-simple-01-white@2x.png"; sourceTree = "<group>"; };
 		970C35AF17C14ACF003B3242 /* arrow-box-out-right-mini-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-box-out-right-mini-white.png"; sourceTree = "<group>"; };
 		970C35B017C14AD0003B3242 /* arrow-box-out-right-mini-white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-box-out-right-mini-white@2x.png"; sourceTree = "<group>"; };
+		970C35B317C14BF1003B3242 /* bald-man-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bald-man-white.png"; sourceTree = "<group>"; };
+		970C35B417C14BF2003B3242 /* bald-man-white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bald-man-white@2x.png"; sourceTree = "<group>"; };
+		970C35B917C15106003B3242 /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = about.jpg; sourceTree = "<group>"; };
+		970C35BB17C15238003B3242 /* hua-logo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hua-logo2.jpg"; sourceTree = "<group>"; };
+		970C35BF17C15751003B3242 /* line-decorator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line-decorator.png"; sourceTree = "<group>"; };
+		970C384417C15D02003B3242 /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
+		970C384517C15D02003B3242 /* tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar@2x.png"; sourceTree = "<group>"; };
+		970C384817C15D21003B3242 /* menubar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menubar.png; sourceTree = "<group>"; };
+		970C384917C15D21003B3242 /* menubar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menubar@2x.png"; sourceTree = "<group>"; };
+		970C385017C15F98003B3242 /* tabbar-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-active.png"; sourceTree = "<group>"; };
+		970C385117C15F99003B3242 /* tabbar-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-active@2x.png"; sourceTree = "<group>"; };
 		970CBDAE17C0BBF7003B3242 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		970CBDB417C0C6A4003B3242 /* GallerySettingsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GallerySettingsManager.h; sourceTree = "<group>"; };
 		970CBDB517C0C6A4003B3242 /* GallerySettingsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GallerySettingsManager.m; sourceTree = "<group>"; };
@@ -181,6 +203,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		970C35C117C15C9B003B3242 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				970C385017C15F98003B3242 /* tabbar-active.png */,
+				970C385117C15F99003B3242 /* tabbar-active@2x.png */,
+				970C384817C15D21003B3242 /* menubar.png */,
+				970C384917C15D21003B3242 /* menubar@2x.png */,
+				970C384417C15D02003B3242 /* tabbar.png */,
+				970C384517C15D02003B3242 /* tabbar@2x.png */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
 		970CBDB317C0C683003B3242 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +230,10 @@
 		970CBDBA17C0CC8D003B3242 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				970C35C117C15C9B003B3242 /* ui */,
+				970C35BF17C15751003B3242 /* line-decorator.png */,
+				970C35BB17C15238003B3242 /* hua-logo2.jpg */,
+				970C35B917C15106003B3242 /* about.jpg */,
 				970CBDCA17C13A9B003B3242 /* Icons */,
 				970CBDC817C134D6003B3242 /* map-annotation-icon.png */,
 				9738824617BEC94900CCA172 /* placeholder.png */,
@@ -207,6 +246,8 @@
 		970CBDCA17C13A9B003B3242 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				970C35B317C14BF1003B3242 /* bald-man-white.png */,
+				970C35B417C14BF2003B3242 /* bald-man-white@2x.png */,
 				970C35AF17C14ACF003B3242 /* arrow-box-out-right-mini-white.png */,
 				970C35B017C14AD0003B3242 /* arrow-box-out-right-mini-white@2x.png */,
 				970C35A717C146BB003B3242 /* arrow-simple-01-white.png */,
@@ -450,6 +491,17 @@
 				970C35AA17C146BB003B3242 /* arrow-simple-01-white@2x.png in Resources */,
 				970C35B117C14AD0003B3242 /* arrow-box-out-right-mini-white.png in Resources */,
 				970C35B217C14AD0003B3242 /* arrow-box-out-right-mini-white@2x.png in Resources */,
+				970C35B517C14BF2003B3242 /* bald-man-white.png in Resources */,
+				970C35B617C14BF2003B3242 /* bald-man-white@2x.png in Resources */,
+				970C35BA17C15106003B3242 /* about.jpg in Resources */,
+				970C35BC17C15238003B3242 /* hua-logo2.jpg in Resources */,
+				970C35C017C15751003B3242 /* line-decorator.png in Resources */,
+				970C384617C15D02003B3242 /* tabbar.png in Resources */,
+				970C384717C15D02003B3242 /* tabbar@2x.png in Resources */,
+				970C384A17C15D21003B3242 /* menubar.png in Resources */,
+				970C384B17C15D21003B3242 /* menubar@2x.png in Resources */,
+				970C385217C15F99003B3242 /* tabbar-active.png in Resources */,
+				970C385317C15F99003B3242 /* tabbar-active@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -272,7 +272,7 @@
         <scene sceneID="ekp-zm-LAe">
             <objects>
                 <navigationController id="hIF-0v-c3D" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Artists" image="children-white.png" id="ciC-eo-TI6"/>
+                    <tabBarItem key="tabBarItem" title="Artists" image="bald-man-white.png" id="ciC-eo-TI6"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
@@ -476,7 +476,7 @@
     </scenes>
     <resources>
         <image name="Default.png" width="320" height="480"/>
-        <image name="children-white.png" width="30" height="30"/>
+        <image name="bald-man-white.png" width="30" height="30"/>
         <image name="email-white.png" width="30" height="30"/>
         <image name="question-white.png" width="30" height="30"/>
         <image name="stamp-white.png" width="30" height="30"/>
