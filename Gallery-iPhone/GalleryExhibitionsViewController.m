@@ -21,7 +21,7 @@
 
 @implementation GalleryExhibitionsViewController
 
-@synthesize exhibitions = _exhibitions;
+@synthesize exhibitions;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -43,9 +43,13 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     self.title  = @"Exhibitions";
-    //self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.png"]];
+    //self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"binding_light"]];
     
     dataLoaded = NO;
+    
+    self.tableView.backgroundColor = [UIColor clearColor];
+    self.tableView.opaque = NO;
+    self.tableView.backgroundView = nil;
     
     //show spinner
     [self initSpinner];
@@ -58,13 +62,13 @@
     spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     [spinner setColor:[UIColor blackColor]];
     spinner.frame = CGRectMake(
-                        self.exhibitionsTableView.bounds.origin.x,
-                        self.exhibitionsTableView.bounds.origin.y,
-                        self.exhibitionsTableView.bounds.size.width,
-                        self.exhibitionsTableView.bounds.size.height-50
+                        self.view.bounds.origin.x,
+                        self.view.bounds.origin.y,
+                        self.view.bounds.size.width,
+                        self.view.bounds.size.height-100
                     );
     
-    [self.exhibitionsTableView addSubview:spinner];
+    [self.view addSubview:spinner];
     [spinner startAnimating];
 }
 
@@ -91,7 +95,12 @@
         
         // Update the UI
         dispatch_async(dispatch_get_main_queue(), ^{
-            [weakSelf.exhibitionsTableView reloadData];
+            //first time animate
+            if (!spinner.isHidden) {
+                [weakSelf.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
+            } else {
+                [weakSelf.tableView reloadData];
+            }
             [weakSelf hideSpinner];
         });
     });
@@ -138,7 +147,7 @@
     // Return the number of rows in the section.
     
     if (!dataLoaded) return 0;
-    return _exhibitions.count;
+    return self.exhibitions.count;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
@@ -156,8 +165,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView
-                             dequeueReusableCellWithIdentifier:@"ExhibitionsTableCell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ExhibitionsTableCell"];
  
     
     //return empty cell
@@ -178,6 +186,8 @@
                             imageUrl:exhibitionObject.imageUrl
                     placeholderImage:[UIImage imageNamed:@"placeholder.png"]
     ];
+    
+    cell.contentView.backgroundColor = [UIColor whiteColor];
     
     return cell;
 }
@@ -235,7 +245,7 @@
     
     if ([segue.identifier isEqualToString:@"exhibitionDetailViewSegueId"])
     {
-        ExhibitionObject *exhibitionObject = [self.exhibitions objectAtIndex:[self.exhibitionsTableView indexPathForSelectedRow].row];
+        ExhibitionObject *exhibitionObject = [self.exhibitions objectAtIndex:[self.tableView indexPathForSelectedRow].row];
      
         GalleryExhibitionDetailViewController *viewController = [segue destinationViewController];
         viewController.exhibitionObject = exhibitionObject;

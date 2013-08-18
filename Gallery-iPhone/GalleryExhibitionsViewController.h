@@ -10,7 +10,8 @@
 
 @interface GalleryExhibitionsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
-@property (strong, nonatomic) IBOutlet UITableView *exhibitionsTableView;
 @property (strong) NSMutableArray *exhibitions;
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
