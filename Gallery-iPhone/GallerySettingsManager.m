@@ -42,8 +42,8 @@
         //location data
         locationCoordinates.latitude = 51.480153;
         locationCoordinates.longitude= -0.169966;
-        locationTitle   = @"H U A";
-        locationSubtitle    = @"Gallery";
+        locationTitle   = @"HUA Gallery";
+        locationSubtitle    = @"Unit 7B, Albion Riverside, 8 Hester Road";
         
         aboutPageFilePath   = [[NSBundle mainBundle] pathForResource:@"HUAGallery-About" ofType:@"html"];
         contactPageFilePath   = [[NSBundle mainBundle] pathForResource:@"HUAGallery-Contact" ofType:@"html"];
@@ -67,9 +67,9 @@
         NSLog(@"Loaded %i bytes from [%@]", data.length, url);
     }
     
-    ExhibitionObject *test1 = [[ExhibitionObject alloc] initWithTitle:@"title1" description:@"description1" imageUrl:@"http://www.hua-gallery.com/images/exhibition/imgb14s.jpg"];
-    ExhibitionObject *test2 = [[ExhibitionObject alloc] initWithTitle:@"title2" description:@"description2" imageUrl:@"http://www.hua-gallery.com/images/exhibition/img_19_sq.jpg"];
-    ExhibitionObject *test3 = [[ExhibitionObject alloc] initWithTitle:@"title3" description:@"description3" imageUrl:@"http://www.hua-gallery.com/images/exhibition/imgb14s.jpg"];
+    ExhibitionObject *test1 = [[ExhibitionObject alloc] initWithTitle:@"Between Spiritual and Material Spaces: the Photographic World of the Gao Brothers" description:@"Hua Gallery is honoured to announce the exhibition of internationally recognised Chinese artists the Gao Brothers." imageUrl:@"http://www.hua-gallery.com/images/exhibition/img14s2.jpg"];
+    ExhibitionObject *test2 = [[ExhibitionObject alloc] initWithTitle:@"Sheng Qi: a New Wind of Economics" description:@"Hua Gallery is delighted to host the exhibition of firmly established artist Sheng Qi at Playboy Club in Mayfair." imageUrl:@"http://www.hua-gallery.com/images/exhibition/img_19_sq_s2.jpg"];
+    ExhibitionObject *test3 = [[ExhibitionObject alloc] initWithTitle:@"Nothing is Still Sheng Qi’s Political Symbolism and Le Guo’s Abstract Journey" description:@"Hua Gallery is pleased to announce a partnership with Aria Art Gallery in Florence where we will host a show of Le Guo and Sheng Qi, introducing their striking art to a new audience." imageUrl:@"http://www.hua-gallery.com/images/exhibition/img_20_ls_s2.jpg"];
     
     return [NSMutableArray arrayWithObjects:test1, test2, test3, nil];
 }

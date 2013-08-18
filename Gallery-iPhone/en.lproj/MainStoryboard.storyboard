@@ -50,10 +50,10 @@
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VY-y1-VEd">
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="a6L-48-8nG"/>
+                                                <constraint firstAttribute="height" constant="21" id="RWB-Hi-keb"/>
                                                 <constraint firstAttribute="width" constant="245" id="eCI-T4-lpx"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
@@ -61,7 +61,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="k0R-wd-EyA"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
@@ -109,7 +109,7 @@
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pe8-4r-4Jc">
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="156" id="4LY-vu-Yaz"/>
+                                            <constraint firstAttribute="height" constant="156" type="user" id="Pbs-kb-wQ0"/>
                                             <constraint firstAttribute="width" constant="156" type="user" id="xMS-lN-k45"/>
                                         </constraints>
                                     </imageView>
@@ -118,7 +118,7 @@
                                             <constraint firstAttribute="height" constant="31" id="49I-QR-bni"/>
                                             <constraint firstAttribute="width" constant="300" type="user" id="FAk-e6-Lyf"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -128,8 +128,8 @@
                                     <constraint firstAttribute="width" constant="320" type="user" id="9SP-8I-82R"/>
                                     <constraint firstAttribute="height" constant="208" type="user" id="CrF-n0-hWZ"/>
                                     <constraint firstItem="KtM-uZ-NSA" firstAttribute="bottom" secondItem="pVN-Le-hLL" secondAttribute="bottom" type="default" id="VOI-eb-BMv"/>
+                                    <constraint firstItem="pe8-4r-4Jc" firstAttribute="top" secondItem="pVN-Le-hLL" secondAttribute="top" constant="12" id="faj-JS-Abo"/>
                                     <constraint firstItem="KtM-uZ-NSA" firstAttribute="centerX" secondItem="pe8-4r-4Jc" secondAttribute="centerX" type="default" id="j9e-Te-wih"/>
-                                    <constraint firstItem="pe8-4r-4Jc" firstAttribute="top" secondItem="pVN-Le-hLL" secondAttribute="top" constant="20" symbolic="YES" type="default" id="tNc-QS-SAT"/>
                                     <constraint firstItem="KtM-uZ-NSA" firstAttribute="centerX" secondItem="pVN-Le-hLL" secondAttribute="centerX" type="default" id="uRs-SE-46q"/>
                                 </constraints>
                             </view>
@@ -183,7 +183,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" type="user" id="qhh-dD-x1y"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>

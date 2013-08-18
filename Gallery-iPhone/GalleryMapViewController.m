@@ -54,7 +54,34 @@
     point.coordinate = location;
     point.title = [[GallerySettingsManager sharedManager] locationTitle];
     point.subtitle = [[GallerySettingsManager sharedManager] locationSubtitle];
+    
     [self.mapView addAnnotation:point];
+}
+
+-(MKAnnotationView*)mapView:(MKMapView*)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
+    NSLog(@"Custom annotation");
+    
+    // If you are showing the users location on the map you don't want to change it
+    MKAnnotationView *view = nil;
+    if (annotation != mapView.userLocation) {
+        // This is not the users location indicator (the blue dot)
+        view = [mapView dequeueReusableAnnotationViewWithIdentifier:@"myAnnotationIdentifier"];
+        if (!view) {
+            // Could not reuse a view ...
+            
+            // Creating a new annotation view, in this case it still looks like a pin
+            view = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"myAnnotationIdentifier"];
+            //view.canShowCallOut = YES; // So that the callout can appear
+            
+            UIImageView *myImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"someName"]];
+            myImageView.frame = CGRectMake(0,0,31,31); // Change the size of the image to fit the callout
+            
+            // Change this to rightCallout... to move the image to the right side
+            view.leftCalloutAccessoryView = myImageView;
+            //[myImageView release], myImageView = nil;
+        }
+    }
+    return view;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
