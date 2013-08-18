@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <UIKit/UIKit.h>
 
 @interface GalleryExhibitionsViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 

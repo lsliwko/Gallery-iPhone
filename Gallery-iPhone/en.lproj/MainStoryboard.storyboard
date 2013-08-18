@@ -164,9 +164,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="KtM-uZ-NSA" firstAttribute="top" secondItem="2iC-Pn-WkR" secondAttribute="top" constant="173" id="8GG-03-8iN"/>
-                            <constraint firstAttribute="bottom" secondItem="lvv-ub-0Rn" secondAttribute="bottom" constant="37" id="8dP-ig-RJL"/>
                             <constraint firstAttribute="trailing" secondItem="eZb-ud-OcF" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="G7a-ex-N37"/>
                             <constraint firstItem="qSZ-rJ-gFf" firstAttribute="top" secondItem="2iC-Pn-WkR" secondAttribute="top" constant="205" id="HzG-QX-VJ0"/>
+                            <constraint firstAttribute="bottom" secondItem="lvv-ub-0Rn" secondAttribute="bottom" constant="14" id="Iwv-YI-PfP"/>
                             <constraint firstItem="pe8-4r-4Jc" firstAttribute="top" secondItem="2iC-Pn-WkR" secondAttribute="top" constant="12" id="K93-ZK-h6T"/>
                             <constraint firstItem="lvv-ub-0Rn" firstAttribute="leading" secondItem="2iC-Pn-WkR" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="LWS-pd-dpK"/>
                             <constraint firstItem="KtM-uZ-NSA" firstAttribute="centerX" secondItem="qSZ-rJ-gFf" secondAttribute="centerX" type="default" id="QjB-uE-Cja"/>
@@ -305,8 +305,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="adl-Sg-OV0" secondAttribute="bottom" constant="14" id="EkB-jp-I19"/>
                             <constraint firstItem="Gs9-pw-a0c" firstAttribute="baseline" secondItem="adl-Sg-OV0" secondAttribute="baseline" type="default" id="VtJ-3S-xFA"/>
-                            <constraint firstAttribute="bottom" secondItem="adl-Sg-OV0" secondAttribute="bottom" constant="37" id="a52-fN-xHi"/>
                             <constraint firstItem="adl-Sg-OV0" firstAttribute="leading" secondItem="UCs-EM-UBl" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="fV3-BW-Wdk"/>
                             <constraint firstAttribute="trailing" secondItem="Gs9-pw-a0c" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="pcL-FG-LpX"/>
                         </constraints>
@@ -372,6 +372,46 @@
     <resources>
         <image name="Default.png" width="320" height="480"/>
     </resources>
+    <classes>
+        <class className="GalleryAboutViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryAboutViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="contactAction:"/>
+                <relationship kind="action" name="openPageAction:"/>
+            </relationships>
+        </class>
+        <class className="GalleryArtistsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryArtistsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="artistsTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="GalleryExhibitionDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryExhibitionDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="catalogueAction:"/>
+                <relationship kind="action" name="openPageAction:"/>
+                <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="GalleryExhibitionsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryExhibitionsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="exhibitionsTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="GalleryMapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryMapViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

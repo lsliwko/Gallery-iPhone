@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		970CBDAF17C0BBF7003B3242 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970CBDAE17C0BBF7003B3242 /* MessageUI.framework */; };
 		973200C217BE56B700D5E0E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973200C117BE56B700D5E0E8 /* UIKit.framework */; };
 		973200C417BE56B700D5E0E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973200C317BE56B700D5E0E8 /* Foundation.framework */; };
 		973200C617BE56B700D5E0E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973200C517BE56B700D5E0E8 /* CoreGraphics.framework */; };
@@ -48,6 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		970CBDAE17C0BBF7003B3242 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		973200BE17BE56B700D5E0E8 /* Gallery-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gallery-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		973200C117BE56B700D5E0E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		973200C317BE56B700D5E0E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -121,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				970CBDAF17C0BBF7003B3242 /* MessageUI.framework in Frameworks */,
 				9738825717BFBC1F00CCA172 /* AudioToolbox.framework in Frameworks */,
 				9738824F17BF9E1D00CCA172 /* QuartzCore.framework in Frameworks */,
 				9732015D17BEB46200D5E0E8 /* ImageIO.framework in Frameworks */,
@@ -137,6 +140,7 @@
 		973200B517BE56B700D5E0E8 = {
 			isa = PBXGroup;
 			children = (
+				970CBDAE17C0BBF7003B3242 /* MessageUI.framework */,
 				9738825617BFBC1F00CCA172 /* AudioToolbox.framework */,
 				9738824E17BF9E1D00CCA172 /* QuartzCore.framework */,
 				9732015C17BEB46200D5E0E8 /* ImageIO.framework */,

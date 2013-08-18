@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
-@interface GalleryAboutViewController : UIViewController
+@interface GalleryAboutViewController : UIViewController <MFMailComposeViewControllerDelegate>
 
 - (IBAction)contactAction:(id)sender;
 - (IBAction)openPageAction:(id)sender;
