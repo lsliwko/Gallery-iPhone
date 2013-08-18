@@ -19,11 +19,12 @@
                         <segue destination="5QY-id-jVW" kind="relationship" relationship="viewControllers" id="caL-9n-Zn6"/>
                         <segue destination="hIF-0v-c3D" kind="relationship" relationship="viewControllers" id="W9G-I5-UqP"/>
                         <segue destination="AhS-Tt-Q2j" kind="relationship" relationship="viewControllers" id="mM8-on-V1l"/>
+                        <segue destination="qfo-Kk-JO2" kind="relationship" relationship="viewControllers" id="lxN-HO-Prh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-58" y="630"/>
+            <point key="canvasLocation" x="-90" y="1002"/>
         </scene>
         <!--Gallery Exhibitions View Controller-->
         <scene sceneID="bHy-gH-eDj">
@@ -262,10 +263,10 @@
             </objects>
             <point key="canvasLocation" x="773" y="596"/>
         </scene>
-        <!--Gallery About View Controller-->
+        <!--Gallery Contact View Controller-->
         <scene sceneID="OlS-6s-MpZ">
             <objects>
-                <viewController id="6Fk-Vx-Fps" customClass="GalleryAboutViewController" sceneMemberID="viewController">
+                <viewController id="6Fk-Vx-Fps" customClass="GalleryContactViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UCs-EM-UBl">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -332,7 +333,7 @@
                     <navigationItem key="navigationItem" id="Wrf-d6-hlS"/>
                     <connections>
                         <outlet property="webView" destination="Pbj-ed-RPK" id="fvd-qC-XGc"/>
-                        <segue destination="g0s-Cf-fQQ" kind="push" identifier="mapViewSegueId" customClass="FadeCustomSegue" id="y8z-ns-dLh"/>
+                        <segue destination="g0s-Cf-fQQ" kind="push" identifier="mapViewSegueId" id="yb0-i4-hXK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Fh-b8-b0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -364,7 +365,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LUl-ie-dUp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1805" y="1333"/>
+            <point key="canvasLocation" x="1771" y="1333"/>
         </scene>
         <!--Navigation Controller - About-->
         <scene sceneID="JYe-g3-XLC">
@@ -387,6 +388,42 @@
             </objects>
             <point key="canvasLocation" x="790" y="1333"/>
         </scene>
+        <!--Gallery About View Controller-->
+        <scene sceneID="lzs-Nc-3TQ">
+            <objects>
+                <viewController id="6dg-iG-mjt" customClass="GalleryAboutViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e60-CT-C4z">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rGc-bs-8dh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPt-PB-t0k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1316" y="2064"/>
+        </scene>
+        <!--Navigation Controller - Contact-->
+        <scene sceneID="2Nu-tG-7i9">
+            <objects>
+                <navigationController id="qfo-Kk-JO2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Contact" image="Default.png" id="WPk-bl-MCf"/>
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="F6H-f9-cXz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6dg-iG-mjt" kind="relationship" relationship="rootViewController" id="deO-JZ-v2C"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x2F-00-10c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="2064"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Default.png" width="320" height="480"/>
@@ -395,8 +432,6 @@
         <class className="GalleryAboutViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryAboutViewController.h"/>
             <relationships>
-                <relationship kind="action" name="contactAction:"/>
-                <relationship kind="action" name="openPageAction:"/>
                 <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
             </relationships>
         </class>
@@ -404,6 +439,14 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryArtistsViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="artistsTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="GalleryContactViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryContactViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="contactAction:"/>
+                <relationship kind="action" name="openPageAction:"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
             </relationships>
         </class>
         <class className="GalleryExhibitionDetailViewController" superclassName="UIViewController">

@@ -11,6 +11,7 @@
 		970CBDB617C0C6A4003B3242 /* GallerySettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 970CBDB517C0C6A4003B3242 /* GallerySettingsManager.m */; };
 		970CBDB917C0C6B9003B3242 /* GalleryDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 970CBDB817C0C6B9003B3242 /* GalleryDataLoader.m */; };
 		970CBDBE17C0CF98003B3242 /* HUAGallery-About.html in Resources */ = {isa = PBXBuildFile; fileRef = 970CBDBD17C0CF98003B3242 /* HUAGallery-About.html */; };
+		970CBDC117C0D89B003B3242 /* GalleryAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 970CBDC017C0D89B003B3242 /* GalleryAboutViewController.m */; };
 		973200C217BE56B700D5E0E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973200C117BE56B700D5E0E8 /* UIKit.framework */; };
 		973200C417BE56B700D5E0E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973200C317BE56B700D5E0E8 /* Foundation.framework */; };
 		973200C617BE56B700D5E0E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973200C517BE56B700D5E0E8 /* CoreGraphics.framework */; };
@@ -46,7 +47,7 @@
 		9738825217BFA05A00CCA172 /* FadeCustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9738825117BFA05A00CCA172 /* FadeCustomSegue.m */; };
 		9738825517BFB8D800CCA172 /* GUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9738825417BFB8D700CCA172 /* GUIUtilities.m */; };
 		9738825717BFBC1F00CCA172 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9738825617BFBC1F00CCA172 /* AudioToolbox.framework */; };
-		973CEA8D17BFEB2100116F7C /* GalleryAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973CEA8C17BFEB2100116F7C /* GalleryAboutViewController.m */; };
+		973CEA8D17BFEB2100116F7C /* GalleryContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973CEA8C17BFEB2100116F7C /* GalleryContactViewController.m */; };
 		973CEA9017BFEDD200116F7C /* GalleryMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973CEA8F17BFEDD200116F7C /* GalleryMapViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,8 @@
 		970CBDB717C0C6B9003B3242 /* GalleryDataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryDataLoader.h; sourceTree = "<group>"; };
 		970CBDB817C0C6B9003B3242 /* GalleryDataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryDataLoader.m; sourceTree = "<group>"; };
 		970CBDBD17C0CF98003B3242 /* HUAGallery-About.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "HUAGallery-About.html"; sourceTree = "<group>"; };
+		970CBDBF17C0D89B003B3242 /* GalleryAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryAboutViewController.h; sourceTree = "<group>"; };
+		970CBDC017C0D89B003B3242 /* GalleryAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryAboutViewController.m; sourceTree = "<group>"; };
 		973200BE17BE56B700D5E0E8 /* Gallery-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gallery-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		973200C117BE56B700D5E0E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		973200C317BE56B700D5E0E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -117,8 +120,8 @@
 		9738825317BFB8D700CCA172 /* GUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUIUtilities.h; sourceTree = "<group>"; };
 		9738825417BFB8D700CCA172 /* GUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUIUtilities.m; sourceTree = "<group>"; };
 		9738825617BFBC1F00CCA172 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		973CEA8B17BFEB2100116F7C /* GalleryAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryAboutViewController.h; sourceTree = "<group>"; };
-		973CEA8C17BFEB2100116F7C /* GalleryAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryAboutViewController.m; sourceTree = "<group>"; };
+		973CEA8B17BFEB2100116F7C /* GalleryContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryContactViewController.h; sourceTree = "<group>"; };
+		973CEA8C17BFEB2100116F7C /* GalleryContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryContactViewController.m; sourceTree = "<group>"; };
 		973CEA8E17BFEDD200116F7C /* GalleryMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryMapViewController.h; sourceTree = "<group>"; };
 		973CEA8F17BFEDD200116F7C /* GalleryMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryMapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -234,10 +237,12 @@
 				973200F417BE57C600D5E0E8 /* GalleryArtistsViewController.m */,
 				9738824817BED2C000CCA172 /* GalleryExhibitionDetailViewController.h */,
 				9738824917BED2C000CCA172 /* GalleryExhibitionDetailViewController.m */,
-				973CEA8B17BFEB2100116F7C /* GalleryAboutViewController.h */,
-				973CEA8C17BFEB2100116F7C /* GalleryAboutViewController.m */,
+				973CEA8B17BFEB2100116F7C /* GalleryContactViewController.h */,
+				973CEA8C17BFEB2100116F7C /* GalleryContactViewController.m */,
 				973CEA8E17BFEDD200116F7C /* GalleryMapViewController.h */,
 				973CEA8F17BFEDD200116F7C /* GalleryMapViewController.m */,
+				970CBDBF17C0D89B003B3242 /* GalleryAboutViewController.h */,
+				970CBDC017C0D89B003B3242 /* GalleryAboutViewController.m */,
 			);
 			name = GUI;
 			sourceTree = "<group>";
@@ -397,10 +402,11 @@
 				9738824A17BED2C100CCA172 /* GalleryExhibitionDetailViewController.m in Sources */,
 				9738825217BFA05A00CCA172 /* FadeCustomSegue.m in Sources */,
 				9738825517BFB8D800CCA172 /* GUIUtilities.m in Sources */,
-				973CEA8D17BFEB2100116F7C /* GalleryAboutViewController.m in Sources */,
+				973CEA8D17BFEB2100116F7C /* GalleryContactViewController.m in Sources */,
 				973CEA9017BFEDD200116F7C /* GalleryMapViewController.m in Sources */,
 				970CBDB617C0C6A4003B3242 /* GallerySettingsManager.m in Sources */,
 				970CBDB917C0C6B9003B3242 /* GalleryDataLoader.m in Sources */,
+				970CBDC117C0D89B003B3242 /* GalleryAboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
