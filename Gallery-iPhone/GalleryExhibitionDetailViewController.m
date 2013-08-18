@@ -52,11 +52,11 @@
     NSLog(@"shareAction");
 }
 
-- (IBAction)openPageAction:(id)sender {
-    NSLog(@"openPageAction");
-}
-
 - (IBAction)catalogueAction:(id)sender {
     NSLog(@"catalogueAction");
+}
+
+- (IBAction)openPageAction:(id)sender {
+    NSLog(@"openPageAction");
 }
 @end

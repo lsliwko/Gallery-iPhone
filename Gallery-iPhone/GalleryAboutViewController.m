@@ -51,4 +51,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)contactAction:(id)sender {
+    NSLog(@"contactAction");
+}
+
+- (IBAction)openPageAction:(id)sender {
+    NSLog(@"openPageAction");
+}
 @end

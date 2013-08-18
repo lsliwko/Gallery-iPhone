@@ -10,4 +10,7 @@
 
 @interface GalleryAboutViewController : UIViewController
 
+- (IBAction)contactAction:(id)sender;
+- (IBAction)openPageAction:(id)sender;
+
 @end
