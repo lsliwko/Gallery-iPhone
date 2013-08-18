@@ -31,7 +31,7 @@
             <objects>
                 <tableViewController id="uO6-3g-zEZ" customClass="GalleryExhibitionsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="73" sectionHeaderHeight="22" sectionFooterHeight="22" id="2tO-lv-pLu">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -102,7 +102,7 @@
             <objects>
                 <viewController id="TOd-rW-SKo" customClass="GalleryExhibitionDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2iC-Pn-WkR">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVN-Le-hLL">
@@ -219,7 +219,7 @@
             <objects>
                 <tableViewController id="CZ3-zZ-iBV" customClass="GalleryArtistsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="iSc-bA-dYK">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -294,7 +294,7 @@
             <objects>
                 <viewController id="6Fk-Vx-Fps" customClass="GalleryContactViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UCs-EM-UBl">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ytx-7N-mKI">
@@ -336,25 +336,28 @@
                                 <constraints>
                                     <constraint firstItem="adl-Sg-OV0" firstAttribute="centerY" secondItem="ytx-7N-mKI" secondAttribute="centerY" type="default" id="6qI-HE-K8n"/>
                                     <constraint firstItem="adl-Sg-OV0" firstAttribute="leading" secondItem="ytx-7N-mKI" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="E6A-aB-WY2"/>
+                                    <constraint firstAttribute="width" constant="320" type="user" id="HWV-X8-V6w"/>
                                     <constraint firstAttribute="trailing" secondItem="Gs9-pw-a0c" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="f28-5k-VzD"/>
+                                    <constraint firstAttribute="height" constant="60" type="user" id="gE3-gf-wZC"/>
                                     <constraint firstItem="adl-Sg-OV0" firstAttribute="baseline" secondItem="Gs9-pw-a0c" secondAttribute="baseline" type="default" id="mEs-Vm-x0U"/>
                                 </constraints>
                             </view>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pbj-ed-RPK">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="359" id="0Kf-J5-36R"/>
+                                    <constraint firstAttribute="width" constant="320" type="user" id="gdh-Bx-m0g"/>
                                 </constraints>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Pbj-ed-RPK" firstAttribute="leading" secondItem="UCs-EM-UBl" secondAttribute="leading" type="default" id="Kvc-fE-VPe"/>
-                            <constraint firstItem="Pbj-ed-RPK" firstAttribute="trailing" secondItem="UCs-EM-UBl" secondAttribute="trailing" type="default" id="NYg-f8-5gU"/>
-                            <constraint firstItem="ytx-7N-mKI" firstAttribute="bottom" secondItem="UCs-EM-UBl" secondAttribute="bottom" type="default" id="RVK-WW-4LD"/>
-                            <constraint firstItem="ytx-7N-mKI" firstAttribute="leading" secondItem="UCs-EM-UBl" secondAttribute="leading" type="default" id="X99-4A-a6U"/>
-                            <constraint firstItem="ytx-7N-mKI" firstAttribute="trailing" secondItem="UCs-EM-UBl" secondAttribute="trailing" type="default" id="k1n-q7-iqa"/>
-                            <constraint firstItem="ytx-7N-mKI" firstAttribute="top" secondItem="Pbj-ed-RPK" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="niz-Nl-Xal"/>
+                            <constraint firstItem="Pbj-ed-RPK" firstAttribute="leading" secondItem="UCs-EM-UBl" secondAttribute="leading" type="user" id="F1E-Av-tjw"/>
+                            <constraint firstItem="Pbj-ed-RPK" firstAttribute="leading" secondItem="UCs-EM-UBl" secondAttribute="leading" type="user" id="Kvc-fE-VPe"/>
+                            <constraint firstItem="Pbj-ed-RPK" firstAttribute="trailing" secondItem="UCs-EM-UBl" secondAttribute="trailing" type="user" id="NYg-f8-5gU"/>
+                            <constraint firstItem="ytx-7N-mKI" firstAttribute="leading" secondItem="UCs-EM-UBl" secondAttribute="leading" type="user" id="X99-4A-a6U"/>
+                            <constraint firstItem="ytx-7N-mKI" firstAttribute="bottom" secondItem="UCs-EM-UBl" secondAttribute="bottom" type="default" id="apN-xq-wWh"/>
+                            <constraint firstItem="ytx-7N-mKI" firstAttribute="top" secondItem="Pbj-ed-RPK" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="c6A-lU-NbC"/>
+                            <constraint firstItem="ytx-7N-mKI" firstAttribute="trailing" secondItem="UCs-EM-UBl" secondAttribute="trailing" type="user" id="k1n-q7-iqa"/>
                             <constraint firstItem="Pbj-ed-RPK" firstAttribute="top" secondItem="UCs-EM-UBl" secondAttribute="top" type="default" id="rS3-tL-O8j"/>
                         </constraints>
                     </view>
@@ -373,7 +376,7 @@
             <objects>
                 <viewController id="g0s-Cf-fQQ" customClass="GalleryMapViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kXj-qq-mjC">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r7r-IO-HSh"/>
@@ -400,7 +403,7 @@
             <objects>
                 <viewController id="6dg-iG-mjt" customClass="GalleryAboutViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e60-CT-C4z">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2n4-i0-EY0">
@@ -520,6 +523,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>
