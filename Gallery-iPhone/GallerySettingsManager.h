@@ -30,8 +30,10 @@
 
 @property (nonatomic, retain) NSString *aboutPageFilePath;
 @property (nonatomic, retain) NSString *contactPageFilePath;
+@property (nonatomic, retain) NSMutableArray *exhibitions;
 
 + (id)sharedManager;
+- (NSMutableArray *)loadExhibitions:(NSError**) error;
 
 @end
 

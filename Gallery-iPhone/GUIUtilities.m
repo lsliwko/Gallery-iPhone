@@ -8,6 +8,7 @@
 
 #import "GUIUtilities.h"
 #import <AudioToolbox/AudioToolbox.h>
+#import "UIImageView+WebCache.h"
 
 @implementation GUIUtilities
 
@@ -63,5 +64,27 @@
         
     });
 }
+
++(void) loadImageViewAsync:(UIViewController*)uiViewController uiImageView:(UIImageView*)uiImageView imageUrl:(NSString *)imageUrl placeholderImage:(UIImage*)placeholderImage {
+    // load asynchroniciously with SDWebImage
+    [uiImageView setImageWithURL:[NSURL URLWithString:imageUrl]
+          placeholderImage:placeholderImage
+                   options:SDWebImageProgressiveDownload
+                  progress:^(NSUInteger receivedSize, long long expectedSize) {
+                      // progression tracking code
+                      NSLog(@"Loading image [%@] %i/%lli", imageUrl, receivedSize, expectedSize);
+                  }
+                 completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
+                     // completion tracking code
+                     
+                     if (error) {
+                         [GUIUtilities showErrorMessage:uiViewController message:@"Connection error"];
+                     } else {
+                         NSLog(@"Image [%@] loaded", imageUrl);
+                     }
+                 }
+    ];
+}
+
 
 @end

@@ -5,11 +5,11 @@
 //  Created by Leszek Sliwko on 16/08/2013.
 //  Copyright (c) 2013 Leszek Sliwko. All rights reserved.
 //
-#import "UIImageView+WebCache.h"
 #import "GalleryExhibitionsViewController.h"
 #import "GalleryExhibitionDetailViewController.h"
 #import "ExhibitionObject.h"
 #import "GUIUtilities.h"
+#import "GallerySettingsManager.h"
 
 @interface GalleryExhibitionsViewController () {
 
@@ -48,17 +48,20 @@
     
     //show spinner
     [self initSpinner];
-    [self launchLoadData];
+    
+    //launchLoadData is triggered in viewWillAppear
+    //[self launchLoadData];
 }
 
 -(void) initSpinner {
     spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     [spinner setColor:[UIColor blackColor]];
     spinner.frame = CGRectMake(
-                               self.exhibitionsTableView.bounds.origin.x,
-                               self.exhibitionsTableView.bounds.origin.y,
-                               self.exhibitionsTableView.bounds.size.width,
-                               self.exhibitionsTableView.bounds.size.height-50);
+                        self.exhibitionsTableView.bounds.origin.x,
+                        self.exhibitionsTableView.bounds.origin.y,
+                        self.exhibitionsTableView.bounds.size.width,
+                        self.exhibitionsTableView.bounds.size.height-50
+                    );
     
     [self.exhibitionsTableView addSubview:spinner];
     [spinner startAnimating];
@@ -103,32 +106,14 @@
 - (void) loadData {
     NSLog(@"Loading data...");
     
-    // simulate loading delay from internet, show spinner
-    //[NSThread sleepForTimeInterval:1];
-    
-    NSString *url   = @"http://www.hua-gallery.com/exhibition_data.xml";
-    
     NSError* error = nil;
-    NSData* data = [NSData
-                    dataWithContentsOfURL:[NSURL URLWithString:url]
-                                  options:NSDataReadingUncached
-                                    error:&error];
-    
+    NSMutableArray *exhibitionsTmp = [[GallerySettingsManager sharedManager] loadExhibitions:&error];
     if (error) {
         [GUIUtilities showErrorMessage:self message:@"Connection error"];
-         NSLog(@"Could not load data from [%@] Error [%@]", url, [error localizedDescription]);
         return;
-    } else {
-        [GUIUtilities showErrorMessage:self message:@"Connection error"];
-        NSLog(@"Loaded %i bytes from [%@]", data.length, url);
     }
     
-    
-    ExhibitionObject *test1 = [[ExhibitionObject alloc] initWithTitle:@"title1" description:@"description1" imageUrl:@"http://www.hua-gallery.com/images/exhibition/imgb14s.jpg"];
-    ExhibitionObject *test2 = [[ExhibitionObject alloc] initWithTitle:@"title2" description:@"description2" imageUrl:@"http://www.hua-gallery.com/images/exhibition/img_19_sq.jpg"];
-    ExhibitionObject *test3 = [[ExhibitionObject alloc] initWithTitle:@"title3" description:@"description3" imageUrl:@"http://www.hua-gallery.com/images/exhibition/imgb14s.jpg"];
-    
-    self.exhibitions = [NSMutableArray arrayWithObjects:test1, test2, test3, nil];
+    self.exhibitions    = exhibitionsTmp;
     
     dataLoaded = YES;
 }
@@ -187,23 +172,10 @@
     [titleLabel setText:exhibitionObject.title];
     [descriptionLabel setText:exhibitionObject.description];
 
-    // load asynchroniciously with SDWebImage
-    [imageView setImageWithURL:[NSURL URLWithString:exhibitionObject.imageUrl]
-              placeholderImage:[UIImage imageNamed:@"placeholder.png"]
-                       options:SDWebImageProgressiveDownload
-                      progress:^(NSUInteger receivedSize, long long expectedSize) {
-                          // progression tracking code
-                          NSLog(@"Loading image [%@] %i/%lli", exhibitionObject.imageUrl, receivedSize, expectedSize);
-                      }
-                     completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
-                         // completion tracking code
-                         
-                         if (error) {
-                             [GUIUtilities showErrorMessage:self message:@"Connection error"];
-                         } else {
-                             NSLog(@"Image [%@] loaded", exhibitionObject.imageUrl);
-                         }
-                     }
+    [GUIUtilities loadImageViewAsync:self
+                         uiImageView:imageView
+                            imageUrl:exhibitionObject.imageUrl
+                    placeholderImage:[UIImage imageNamed:@"placeholder.png"]
     ];
     
     return cell;

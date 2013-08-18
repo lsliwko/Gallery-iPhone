@@ -8,6 +8,7 @@
 
 #import "GallerySettingsManager.h"
 #import <MapKit/MapKit.h>
+#import "ExhibitionObject.h";
 
 @implementation GallerySettingsManager
 
@@ -48,6 +49,29 @@
         contactPageFilePath   = [[NSBundle mainBundle] pathForResource:@"HUAGallery-Contact" ofType:@"html"];
     }
     return self;
+}
+
+- (NSMutableArray *)loadExhibitions:(NSError**) error {
+    NSLog(@"loadExhibitions");
+    
+    NSString *url   = @"http://www.hua-gallery.com/exhibition_data.xml";
+    NSData* data = [NSData
+                    dataWithContentsOfURL:[NSURL URLWithString:url]
+                    options:NSDataReadingUncached
+                    error:error];
+    
+    if (*error) {
+        NSLog(@"Could not load data from [%@] Error [%@]", url, [*error localizedDescription]);
+        return nil;
+    } else {
+        NSLog(@"Loaded %i bytes from [%@]", data.length, url);
+    }
+    
+    ExhibitionObject *test1 = [[ExhibitionObject alloc] initWithTitle:@"title1" description:@"description1" imageUrl:@"http://www.hua-gallery.com/images/exhibition/imgb14s.jpg"];
+    ExhibitionObject *test2 = [[ExhibitionObject alloc] initWithTitle:@"title2" description:@"description2" imageUrl:@"http://www.hua-gallery.com/images/exhibition/img_19_sq.jpg"];
+    ExhibitionObject *test3 = [[ExhibitionObject alloc] initWithTitle:@"title3" description:@"description3" imageUrl:@"http://www.hua-gallery.com/images/exhibition/imgb14s.jpg"];
+    
+    return [NSMutableArray arrayWithObjects:test1, test2, test3, nil];
 }
 
 @end

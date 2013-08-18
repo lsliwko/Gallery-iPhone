@@ -7,6 +7,7 @@
 //
 
 #import "GalleryExhibitionDetailViewController.h"
+#import "GUIUtilities.h"
 
 @interface GalleryExhibitionDetailViewController ()
 
@@ -38,6 +39,15 @@
     self.navigationItem.rightBarButtonItem = rightItem;
     
     self.title  = self.exhibitionObject.title;
+    
+    [self.titleLabel setText:self.exhibitionObject.title];
+    [self.descriptionLabel setText:self.exhibitionObject.description];
+    
+    [GUIUtilities loadImageViewAsync:self
+                         uiImageView:self.imageView
+                            imageUrl:self.exhibitionObject.imageUrl
+                    placeholderImage:[UIImage imageNamed:@"placeholder.png"]
+    ];
 }
 
 - (void)didReceiveMemoryWarning
