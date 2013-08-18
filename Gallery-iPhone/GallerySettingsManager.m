@@ -19,7 +19,7 @@
 @synthesize locationSubtitle;
 
 @synthesize aboutPageFilePath;
-
+@synthesize contactPageFilePath;
 
 #pragma mark Singleton Methods
 
@@ -45,6 +45,7 @@
         locationSubtitle    = @"Gallery";
         
         aboutPageFilePath   = [[NSBundle mainBundle] pathForResource:@"HUAGallery-About" ofType:@"html"];
+        contactPageFilePath   = [[NSBundle mainBundle] pathForResource:@"HUAGallery-Contact" ofType:@"html"];
     }
     return self;
 }

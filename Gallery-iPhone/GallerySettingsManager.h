@@ -18,6 +18,7 @@
     NSString *locationSubtitle;
     
     NSString *aboutPageFilePath;
+    NSString *contactPageFilePath;
 }
 
 @property (nonatomic, retain) NSString *email;
@@ -28,6 +29,7 @@
 @property (nonatomic, retain) NSString *locationSubtitle;
 
 @property (nonatomic, retain) NSString *aboutPageFilePath;
+@property (nonatomic, retain) NSString *contactPageFilePath;
 
 + (id)sharedManager;
 

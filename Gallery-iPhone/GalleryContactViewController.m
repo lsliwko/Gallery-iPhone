@@ -40,7 +40,7 @@
     self.navigationItem.rightBarButtonItem = rightItem;
     
     
-    NSString *filePath = [[GallerySettingsManager sharedManager] aboutPageFilePath];
+    NSString *filePath = [[GallerySettingsManager sharedManager] contactPageFilePath];
     NSData *htmlData = [NSData dataWithContentsOfFile:filePath];
     if (htmlData) {
         [self.webView loadData:htmlData MIMEType:@"text/html" textEncodingName:@"UTF-8" baseURL:[NSURL URLWithString:nil]];

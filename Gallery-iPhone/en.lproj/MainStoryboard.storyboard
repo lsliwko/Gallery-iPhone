@@ -18,8 +18,8 @@
                     <connections>
                         <segue destination="5QY-id-jVW" kind="relationship" relationship="viewControllers" id="caL-9n-Zn6"/>
                         <segue destination="hIF-0v-c3D" kind="relationship" relationship="viewControllers" id="W9G-I5-UqP"/>
-                        <segue destination="bFy-Ez-dtx" kind="relationship" relationship="viewControllers" id="1ss-Gk-NRB"/>
                         <segue destination="WO0-LR-4Sl" kind="relationship" relationship="viewControllers" id="bJR-jF-ggk"/>
+                        <segue destination="bFy-Ez-dtx" kind="relationship" relationship="viewControllers" id="1ss-Gk-NRB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
@@ -388,6 +388,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rGc-bs-8dh"/>
+                    <connections>
+                        <outlet property="webView" destination="2n4-i0-EY0" id="Qba-MV-Kju"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPt-PB-t0k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

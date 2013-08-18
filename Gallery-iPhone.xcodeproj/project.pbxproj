@@ -12,6 +12,7 @@
 		970CBDB917C0C6B9003B3242 /* GalleryDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 970CBDB817C0C6B9003B3242 /* GalleryDataLoader.m */; };
 		970CBDBE17C0CF98003B3242 /* HUAGallery-About.html in Resources */ = {isa = PBXBuildFile; fileRef = 970CBDBD17C0CF98003B3242 /* HUAGallery-About.html */; };
 		970CBDC117C0D89B003B3242 /* GalleryAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 970CBDC017C0D89B003B3242 /* GalleryAboutViewController.m */; };
+		970CBDC317C0E023003B3242 /* HUAGallery-Contact.html in Resources */ = {isa = PBXBuildFile; fileRef = 970CBDC217C0E023003B3242 /* HUAGallery-Contact.html */; };
 		973200C217BE56B700D5E0E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973200C117BE56B700D5E0E8 /* UIKit.framework */; };
 		973200C417BE56B700D5E0E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973200C317BE56B700D5E0E8 /* Foundation.framework */; };
 		973200C617BE56B700D5E0E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973200C517BE56B700D5E0E8 /* CoreGraphics.framework */; };
@@ -60,6 +61,7 @@
 		970CBDBD17C0CF98003B3242 /* HUAGallery-About.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "HUAGallery-About.html"; sourceTree = "<group>"; };
 		970CBDBF17C0D89B003B3242 /* GalleryAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryAboutViewController.h; sourceTree = "<group>"; };
 		970CBDC017C0D89B003B3242 /* GalleryAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryAboutViewController.m; sourceTree = "<group>"; };
+		970CBDC217C0E023003B3242 /* HUAGallery-Contact.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "HUAGallery-Contact.html"; sourceTree = "<group>"; };
 		973200BE17BE56B700D5E0E8 /* Gallery-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gallery-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		973200C117BE56B700D5E0E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		973200C317BE56B700D5E0E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -161,6 +163,7 @@
 			children = (
 				9738824617BEC94900CCA172 /* placeholder.png */,
 				970CBDBD17C0CF98003B3242 /* HUAGallery-About.html */,
+				970CBDC217C0E023003B3242 /* HUAGallery-Contact.html */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				973200DB17BE56B800D5E0E8 /* MainStoryboard.storyboard in Resources */,
 				9738824717BEC94900CCA172 /* placeholder.png in Resources */,
 				970CBDBE17C0CF98003B3242 /* HUAGallery-About.html in Resources */,
+				970CBDC317C0E023003B3242 /* HUAGallery-Contact.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
