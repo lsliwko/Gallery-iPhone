@@ -251,7 +251,7 @@
         <scene sceneID="Xog-af-DwS">
             <objects>
                 <navigationController id="5QY-id-jVW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Exhibitions" image="Default.png" id="MYi-fM-Tpb"/>
+                    <tabBarItem key="tabBarItem" title="Exhibitions" image="stamp-white.png" id="MYi-fM-Tpb"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
@@ -272,7 +272,7 @@
         <scene sceneID="ekp-zm-LAe">
             <objects>
                 <navigationController id="hIF-0v-c3D" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Artists" image="Default.png" id="ciC-eo-TI6"/>
+                    <tabBarItem key="tabBarItem" title="Artists" image="children-white.png" id="ciC-eo-TI6"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
@@ -379,14 +379,18 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r7r-IO-HSh"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r7r-IO-HSh">
+                                <connections>
+                                    <outlet property="delegate" destination="g0s-Cf-fQQ" id="E8m-Xp-DTi"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="r7r-IO-HSh" firstAttribute="leading" secondItem="kXj-qq-mjC" secondAttribute="leading" type="default" id="NGw-BB-BLr"/>
-                            <constraint firstItem="r7r-IO-HSh" firstAttribute="bottom" secondItem="kXj-qq-mjC" secondAttribute="bottom" type="default" id="gGa-PU-udT"/>
-                            <constraint firstItem="r7r-IO-HSh" firstAttribute="top" secondItem="kXj-qq-mjC" secondAttribute="top" type="default" id="hFX-B8-xfO"/>
-                            <constraint firstItem="r7r-IO-HSh" firstAttribute="trailing" secondItem="kXj-qq-mjC" secondAttribute="trailing" type="default" id="kCJ-sh-Y6X"/>
+                            <constraint firstItem="r7r-IO-HSh" firstAttribute="trailing" secondItem="kXj-qq-mjC" secondAttribute="trailing" type="default" id="Bun-FA-Zut"/>
+                            <constraint firstItem="r7r-IO-HSh" firstAttribute="bottom" secondItem="kXj-qq-mjC" secondAttribute="bottom" type="default" id="iLN-Cp-x7u"/>
+                            <constraint firstItem="r7r-IO-HSh" firstAttribute="top" secondItem="kXj-qq-mjC" secondAttribute="top" type="default" id="ryY-cA-1Ll"/>
+                            <constraint firstItem="r7r-IO-HSh" firstAttribute="leading" secondItem="kXj-qq-mjC" secondAttribute="leading" type="default" id="tZJ-Kf-Omm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yOQ-P8-l22"/>
@@ -396,7 +400,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LUl-ie-dUp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1754" y="1313"/>
+            <point key="canvasLocation" x="1776" y="1305"/>
         </scene>
         <!--Gallery About View Controller-->
         <scene sceneID="lzs-Nc-3TQ">
@@ -431,7 +435,7 @@
         <scene sceneID="GCl-fC-lDP">
             <objects>
                 <navigationController id="bFy-Ez-dtx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contact" image="Default.png" id="z3M-aC-Fuv"/>
+                    <tabBarItem key="tabBarItem" title="Contact" image="email-white.png" id="z3M-aC-Fuv"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
@@ -472,6 +476,9 @@
     </scenes>
     <resources>
         <image name="Default.png" width="320" height="480"/>
+        <image name="children-white.png" width="30" height="30"/>
+        <image name="email-white.png" width="30" height="30"/>
+        <image name="stamp-white.png" width="30" height="30"/>
     </resources>
     <classes>
         <class className="GalleryAboutViewController" superclassName="UIViewController">

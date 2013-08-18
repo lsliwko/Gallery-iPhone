@@ -71,9 +71,9 @@
             
             // Creating a new annotation view, in this case it still looks like a pin
             view = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"myAnnotationIdentifier"];
-            //view.canShowCallOut = YES; // So that the callout can appear
+            view.canShowCallout     = YES;  // So that the callout can appear
             
-            UIImageView *myImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"someName"]];
+            UIImageView *myImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"map-annotation-icon.png"]];
             myImageView.frame = CGRectMake(0,0,31,31); // Change the size of the image to fit the callout
             
             // Change this to rightCallout... to move the image to the right side

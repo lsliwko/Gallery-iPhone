@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		970C359117C13DD8003B3242 /* children-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C358F17C13DD8003B3242 /* children-white.png */; };
+		970C359217C13DD8003B3242 /* children-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C359017C13DD8003B3242 /* children-white@2x.png */; };
+		970C359517C13E95003B3242 /* stamp-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C359317C13E95003B3242 /* stamp-white.png */; };
+		970C359617C13E95003B3242 /* stamp-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C359417C13E95003B3242 /* stamp-white@2x.png */; };
+		970C359917C14002003B3242 /* email-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C359717C14002003B3242 /* email-white.png */; };
+		970C359A17C14002003B3242 /* email-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C359817C14002003B3242 /* email-white@2x.png */; };
 		970CBDAF17C0BBF7003B3242 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970CBDAE17C0BBF7003B3242 /* MessageUI.framework */; };
 		970CBDB617C0C6A4003B3242 /* GallerySettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 970CBDB517C0C6A4003B3242 /* GallerySettingsManager.m */; };
 		970CBDB917C0C6B9003B3242 /* GalleryDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 970CBDB817C0C6B9003B3242 /* GalleryDataLoader.m */; };
 		970CBDBE17C0CF98003B3242 /* HUAGallery-About.html in Resources */ = {isa = PBXBuildFile; fileRef = 970CBDBD17C0CF98003B3242 /* HUAGallery-About.html */; };
 		970CBDC117C0D89B003B3242 /* GalleryAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 970CBDC017C0D89B003B3242 /* GalleryAboutViewController.m */; };
 		970CBDC317C0E023003B3242 /* HUAGallery-Contact.html in Resources */ = {isa = PBXBuildFile; fileRef = 970CBDC217C0E023003B3242 /* HUAGallery-Contact.html */; };
+		970CBDC917C134D6003B3242 /* map-annotation-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 970CBDC817C134D6003B3242 /* map-annotation-icon.png */; };
 		973200C217BE56B700D5E0E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973200C117BE56B700D5E0E8 /* UIKit.framework */; };
 		973200C417BE56B700D5E0E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973200C317BE56B700D5E0E8 /* Foundation.framework */; };
 		973200C617BE56B700D5E0E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973200C517BE56B700D5E0E8 /* CoreGraphics.framework */; };
@@ -53,6 +60,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		970C358F17C13DD8003B3242 /* children-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "children-white.png"; sourceTree = "<group>"; };
+		970C359017C13DD8003B3242 /* children-white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "children-white@2x.png"; sourceTree = "<group>"; };
+		970C359317C13E95003B3242 /* stamp-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stamp-white.png"; sourceTree = "<group>"; };
+		970C359417C13E95003B3242 /* stamp-white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stamp-white@2x.png"; sourceTree = "<group>"; };
+		970C359717C14002003B3242 /* email-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "email-white.png"; sourceTree = "<group>"; };
+		970C359817C14002003B3242 /* email-white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "email-white@2x.png"; sourceTree = "<group>"; };
 		970CBDAE17C0BBF7003B3242 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		970CBDB417C0C6A4003B3242 /* GallerySettingsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GallerySettingsManager.h; sourceTree = "<group>"; };
 		970CBDB517C0C6A4003B3242 /* GallerySettingsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GallerySettingsManager.m; sourceTree = "<group>"; };
@@ -62,6 +75,7 @@
 		970CBDBF17C0D89B003B3242 /* GalleryAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryAboutViewController.h; sourceTree = "<group>"; };
 		970CBDC017C0D89B003B3242 /* GalleryAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryAboutViewController.m; sourceTree = "<group>"; };
 		970CBDC217C0E023003B3242 /* HUAGallery-Contact.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "HUAGallery-Contact.html"; sourceTree = "<group>"; };
+		970CBDC817C134D6003B3242 /* map-annotation-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-annotation-icon.png"; sourceTree = "<group>"; };
 		973200BE17BE56B700D5E0E8 /* Gallery-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gallery-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		973200C117BE56B700D5E0E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		973200C317BE56B700D5E0E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -161,11 +175,26 @@
 		970CBDBA17C0CC8D003B3242 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				970CBDCA17C13A9B003B3242 /* Icons */,
+				970CBDC817C134D6003B3242 /* map-annotation-icon.png */,
 				9738824617BEC94900CCA172 /* placeholder.png */,
 				970CBDBD17C0CF98003B3242 /* HUAGallery-About.html */,
 				970CBDC217C0E023003B3242 /* HUAGallery-Contact.html */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		970CBDCA17C13A9B003B3242 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				970C359317C13E95003B3242 /* stamp-white.png */,
+				970C359717C14002003B3242 /* email-white.png */,
+				970C359817C14002003B3242 /* email-white@2x.png */,
+				970C359417C13E95003B3242 /* stamp-white@2x.png */,
+				970C358F17C13DD8003B3242 /* children-white.png */,
+				970C359017C13DD8003B3242 /* children-white@2x.png */,
+			);
+			name = Icons;
 			sourceTree = "<group>";
 		};
 		973200B517BE56B700D5E0E8 = {
@@ -374,6 +403,13 @@
 				9738824717BEC94900CCA172 /* placeholder.png in Resources */,
 				970CBDBE17C0CF98003B3242 /* HUAGallery-About.html in Resources */,
 				970CBDC317C0E023003B3242 /* HUAGallery-Contact.html in Resources */,
+				970CBDC917C134D6003B3242 /* map-annotation-icon.png in Resources */,
+				970C359117C13DD8003B3242 /* children-white.png in Resources */,
+				970C359217C13DD8003B3242 /* children-white@2x.png in Resources */,
+				970C359517C13E95003B3242 /* stamp-white.png in Resources */,
+				970C359617C13E95003B3242 /* stamp-white@2x.png in Resources */,
+				970C359917C14002003B3242 /* email-white.png in Resources */,
+				970C359A17C14002003B3242 /* email-white@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
