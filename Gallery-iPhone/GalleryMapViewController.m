@@ -36,10 +36,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc]
+                                   initWithImage:[UIImage imageNamed:@"arrow-simple-01-white.png"]
+                                   style:UIBarButtonItemStyleBordered
+                                   target:self
+                                   action:@selector(backAction)];
+    self.navigationItem.leftBarButtonItem = backButton;
     
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]
-                                  initWithTitle:@"Reset"
+                                  initWithImage:[UIImage imageNamed:@"map-location-area-mini-white.png"]
                                   style:UIBarButtonItemStyleBordered
                                   target:self
                                   action:@selector(resetAction)];
@@ -56,6 +61,12 @@
     point.subtitle = [[GallerySettingsManager sharedManager] locationSubtitle];
     
     [self.mapView addAnnotation:point];
+}
+
+- (void)backAction
+{
+    NSLog(@"actionBack");
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 -(MKAnnotationView*)mapView:(MKMapView*)mapView viewForAnnotation:(id<MKAnnotation>)annotation {

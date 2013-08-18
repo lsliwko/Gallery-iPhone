@@ -456,7 +456,7 @@
         <scene sceneID="cYC-oc-qCV">
             <objects>
                 <navigationController id="WO0-LR-4Sl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="About" image="Default.png" id="cbO-Yf-81Q"/>
+                    <tabBarItem key="tabBarItem" title="About" image="question-white.png" id="cbO-Yf-81Q"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
@@ -478,6 +478,7 @@
         <image name="Default.png" width="320" height="480"/>
         <image name="children-white.png" width="30" height="30"/>
         <image name="email-white.png" width="30" height="30"/>
+        <image name="question-white.png" width="30" height="30"/>
         <image name="stamp-white.png" width="30" height="30"/>
     </resources>
     <classes>

@@ -33,12 +33,11 @@
 	// Do any additional setup after loading the view.
     
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]
-                                  initWithTitle:@"Map"
-                                  style:UIBarButtonItemStyleBordered
+                                  initWithImage:[UIImage imageNamed:@"brochure-mini-white.png"]
+                                  style:UIBarButtonItemStylePlain
                                   target:self
                                   action:@selector(mapAction)];
     self.navigationItem.rightBarButtonItem = rightItem;
-    
     
     NSString *filePath = [[GallerySettingsManager sharedManager] contactPageFilePath];
     NSData *htmlData = [NSData dataWithContentsOfFile:filePath];
