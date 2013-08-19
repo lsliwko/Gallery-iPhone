@@ -34,6 +34,7 @@
 		970C384B17C15D21003B3242 /* menubar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C384917C15D21003B3242 /* menubar@2x.png */; };
 		970C385A17C179A4003B3242 /* tabbar-active.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C385817C179A3003B3242 /* tabbar-active.png */; };
 		970C385B17C179A4003B3242 /* tabbar-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C385917C179A4003B3242 /* tabbar-active@2x.png */; };
+		970C386517C1984F003B3242 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C386417C1984F003B3242 /* logo.png */; };
 		970CBDAF17C0BBF7003B3242 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970CBDAE17C0BBF7003B3242 /* MessageUI.framework */; };
 		970CBDB617C0C6A4003B3242 /* GallerySettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 970CBDB517C0C6A4003B3242 /* GallerySettingsManager.m */; };
 		970CBDB917C0C6B9003B3242 /* GalleryDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 970CBDB817C0C6B9003B3242 /* GalleryDataLoader.m */; };
@@ -108,6 +109,7 @@
 		970C384917C15D21003B3242 /* menubar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menubar@2x.png"; sourceTree = "<group>"; };
 		970C385817C179A3003B3242 /* tabbar-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-active.png"; sourceTree = "<group>"; };
 		970C385917C179A4003B3242 /* tabbar-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-active@2x.png"; sourceTree = "<group>"; };
+		970C386417C1984F003B3242 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		970CBDAE17C0BBF7003B3242 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		970CBDB417C0C6A4003B3242 /* GallerySettingsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GallerySettingsManager.h; sourceTree = "<group>"; };
 		970CBDB517C0C6A4003B3242 /* GallerySettingsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GallerySettingsManager.m; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 		970C35C117C15C9B003B3242 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				970C386417C1984F003B3242 /* logo.png */,
 				970C385817C179A3003B3242 /* tabbar-active.png */,
 				970C385917C179A4003B3242 /* tabbar-active@2x.png */,
 				970C384817C15D21003B3242 /* menubar.png */,
@@ -502,6 +505,7 @@
 				970C384B17C15D21003B3242 /* menubar@2x.png in Resources */,
 				970C385A17C179A4003B3242 /* tabbar-active.png in Resources */,
 				970C385B17C179A4003B3242 /* tabbar-active@2x.png in Resources */,
+				970C386517C1984F003B3242 /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

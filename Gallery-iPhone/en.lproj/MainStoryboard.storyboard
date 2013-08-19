@@ -16,10 +16,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <segue destination="CVp-Kn-oEg" kind="relationship" relationship="viewControllers" id="uM8-VP-8Jo"/>
                         <segue destination="hIF-0v-c3D" kind="relationship" relationship="viewControllers" id="W9G-I5-UqP"/>
                         <segue destination="WO0-LR-4Sl" kind="relationship" relationship="viewControllers" id="bJR-jF-ggk"/>
                         <segue destination="bFy-Ez-dtx" kind="relationship" relationship="viewControllers" id="1ss-Gk-NRB"/>
-                        <segue destination="CVp-Kn-oEg" kind="relationship" relationship="viewControllers" id="uM8-VP-8Jo"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
@@ -184,6 +184,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="dKW-gx-xpQ"/>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1PL-gQ-0Jy">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -241,8 +242,10 @@
                         <constraints>
                             <constraint firstItem="1PL-gQ-0Jy" firstAttribute="bottom" secondItem="wZa-t5-HRK" secondAttribute="bottom" type="default" id="AoJ-13-ffw"/>
                             <constraint firstItem="1PL-gQ-0Jy" firstAttribute="top" secondItem="wZa-t5-HRK" secondAttribute="top" type="default" id="CuT-dA-tWd"/>
-                            <constraint firstItem="1PL-gQ-0Jy" firstAttribute="trailing" secondItem="wZa-t5-HRK" secondAttribute="trailing" type="default" id="K1Q-to-XJA"/>
                             <constraint firstItem="1PL-gQ-0Jy" firstAttribute="leading" secondItem="wZa-t5-HRK" secondAttribute="leading" type="default" id="Um2-mO-Jys"/>
+                            <constraint firstItem="dKW-gx-xpQ" firstAttribute="centerX" secondItem="wZa-t5-HRK" secondAttribute="centerX" type="default" id="ktC-GA-oUa"/>
+                            <constraint firstItem="dKW-gx-xpQ" firstAttribute="top" secondItem="wZa-t5-HRK" secondAttribute="top" constant="162" id="v5y-n7-LCw"/>
+                            <constraint firstItem="dKW-gx-xpQ" firstAttribute="centerX" secondItem="1PL-gQ-0Jy" secondAttribute="centerX" type="default" id="w9F-ax-ffF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bsd-tw-BeR"/>
@@ -485,6 +488,7 @@
     <resources>
         <image name="bald-man-white.png" width="30" height="30"/>
         <image name="email-white.png" width="30" height="30"/>
+        <image name="logo.png" width="260" height="45"/>
         <image name="question-white.png" width="30" height="30"/>
         <image name="stamp-white.png" width="30" height="30"/>
     </resources>
