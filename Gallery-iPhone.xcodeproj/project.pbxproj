@@ -46,6 +46,7 @@
 		970CBDC117C0D89B003B3242 /* GalleryAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 970CBDC017C0D89B003B3242 /* GalleryAboutViewController.m */; };
 		970CBDC317C0E023003B3242 /* HUAGallery-Contact.html in Resources */ = {isa = PBXBuildFile; fileRef = 970CBDC217C0E023003B3242 /* HUAGallery-Contact.html */; };
 		970CBDC917C134D6003B3242 /* map-annotation-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 970CBDC817C134D6003B3242 /* map-annotation-icon.png */; };
+		970D4AE217C345BC00F0CD49 /* image-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 970D4AE117C345BC00F0CD49 /* image-frame.png */; };
 		973200C217BE56B700D5E0E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973200C117BE56B700D5E0E8 /* UIKit.framework */; };
 		973200C417BE56B700D5E0E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973200C317BE56B700D5E0E8 /* Foundation.framework */; };
 		973200C617BE56B700D5E0E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973200C517BE56B700D5E0E8 /* CoreGraphics.framework */; };
@@ -128,6 +129,7 @@
 		970CBDC017C0D89B003B3242 /* GalleryAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryAboutViewController.m; sourceTree = "<group>"; };
 		970CBDC217C0E023003B3242 /* HUAGallery-Contact.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "HUAGallery-Contact.html"; sourceTree = "<group>"; };
 		970CBDC817C134D6003B3242 /* map-annotation-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-annotation-icon.png"; sourceTree = "<group>"; };
+		970D4AE117C345BC00F0CD49 /* image-frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image-frame.png"; sourceTree = "<group>"; };
 		973200BE17BE56B700D5E0E8 /* Gallery-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gallery-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		973200C117BE56B700D5E0E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		973200C317BE56B700D5E0E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -216,6 +218,7 @@
 		970C35C117C15C9B003B3242 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				970D4AE117C345BC00F0CD49 /* image-frame.png */,
 				970C39E317C26524003B3242 /* button-black-pressed.png */,
 				970C39E417C26524003B3242 /* button-black-pressed@2x.png */,
 				970C39DF17C25D35003B3242 /* button-aluminum-pressed.png */,
@@ -522,6 +525,7 @@
 				970C39E217C25D35003B3242 /* button-aluminum-pressed@2x.png in Resources */,
 				970C39E517C26524003B3242 /* button-black-pressed.png in Resources */,
 				970C39E617C26524003B3242 /* button-black-pressed@2x.png in Resources */,
+				970D4AE217C345BC00F0CD49 /* image-frame.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

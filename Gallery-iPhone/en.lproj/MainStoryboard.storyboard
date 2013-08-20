@@ -51,15 +51,24 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="image-frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="zZ4-xG-fdp">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="156" type="user" id="JfA-hC-5EJ"/>
+                                            <constraint firstAttribute="height" constant="156" type="user" id="ntU-33-4A1"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="zZ4-xG-fdp" firstAttribute="centerX" secondItem="KtM-uZ-NSA" secondAttribute="centerX" type="default" id="2DA-Y3-6Hd"/>
+                                    <constraint firstItem="pe8-4r-4Jc" firstAttribute="leading" secondItem="zZ4-xG-fdp" secondAttribute="leading" type="default" id="4gH-22-Yux"/>
                                     <constraint firstAttribute="width" constant="320" type="user" id="9SP-8I-82R"/>
+                                    <constraint firstItem="zZ4-xG-fdp" firstAttribute="top" secondItem="pe8-4r-4Jc" secondAttribute="top" type="user" id="AaT-hO-Cg1"/>
                                     <constraint firstAttribute="height" constant="208" type="user" id="CrF-n0-hWZ"/>
+                                    <constraint firstItem="zZ4-xG-fdp" firstAttribute="bottom" secondItem="pe8-4r-4Jc" secondAttribute="bottom" type="user" id="TiD-k6-gew"/>
                                     <constraint firstItem="KtM-uZ-NSA" firstAttribute="bottom" secondItem="pVN-Le-hLL" secondAttribute="bottom" type="default" id="VOI-eb-BMv"/>
-                                    <constraint firstItem="pe8-4r-4Jc" firstAttribute="top" secondItem="pVN-Le-hLL" secondAttribute="top" constant="12" id="faj-JS-Abo"/>
-                                    <constraint firstItem="KtM-uZ-NSA" firstAttribute="centerX" secondItem="pe8-4r-4Jc" secondAttribute="centerX" type="default" id="j9e-Te-wih"/>
                                     <constraint firstItem="KtM-uZ-NSA" firstAttribute="centerX" secondItem="pVN-Le-hLL" secondAttribute="centerX" type="default" id="uRs-SE-46q"/>
+                                    <constraint firstItem="pe8-4r-4Jc" firstAttribute="top" secondItem="pVN-Le-hLL" secondAttribute="top" constant="12" id="zx1-Xj-3WY"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNG-yP-WH1">
@@ -197,8 +206,7 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="103" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1J-Zv-qOE">
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="56" id="BaX-EA-8za"/>
-                                                        <constraint firstAttribute="height" constant="56" id="U9O-Yh-g9s"/>
+                                                        <constraint firstAttribute="height" constant="56" id="edC-Gb-8bZ"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXf-pk-vXM">
@@ -218,16 +226,25 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="image-frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="it5-Yr-3Wz">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="56" id="PKn-Kv-Ed3"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="Qv5-RQ-kUQ" firstAttribute="leading" secondItem="V1J-Zv-qOE" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="4Eo-Hy-Sy9"/>
+                                            <constraint firstItem="it5-Yr-3Wz" firstAttribute="leading" secondItem="V1J-Zv-qOE" secondAttribute="leading" type="default" id="0QF-Wh-5T3"/>
                                             <constraint firstItem="dXf-pk-vXM" firstAttribute="top" secondItem="w1g-R9-Ofd" secondAttribute="top" constant="8" id="5gD-b5-iKb"/>
-                                            <constraint firstItem="V1J-Zv-qOE" firstAttribute="leading" secondItem="w1g-R9-Ofd" secondAttribute="leading" constant="7" id="9zB-yX-Hkt"/>
-                                            <constraint firstItem="V1J-Zv-qOE" firstAttribute="centerY" secondItem="w1g-R9-Ofd" secondAttribute="centerY" type="default" id="LsS-sP-joF"/>
+                                            <constraint firstItem="dXf-pk-vXM" firstAttribute="leading" secondItem="it5-Yr-3Wz" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="8GC-m7-T7K"/>
+                                            <constraint firstItem="Qv5-RQ-kUQ" firstAttribute="leading" secondItem="V1J-Zv-qOE" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="CER-R0-mao"/>
+                                            <constraint firstItem="it5-Yr-3Wz" firstAttribute="top" secondItem="V1J-Zv-qOE" secondAttribute="top" type="default" id="Qny-ee-a4z"/>
+                                            <constraint firstItem="V1J-Zv-qOE" firstAttribute="leading" secondItem="w1g-R9-Ofd" secondAttribute="leading" constant="7" id="RUd-yl-TVP"/>
                                             <constraint firstItem="Qv5-RQ-kUQ" firstAttribute="trailing" secondItem="dXf-pk-vXM" secondAttribute="trailing" type="default" id="SIQ-gt-BLh"/>
+                                            <constraint firstItem="it5-Yr-3Wz" firstAttribute="bottom" secondItem="V1J-Zv-qOE" secondAttribute="bottom" type="default" id="Ttz-rm-vJ7"/>
                                             <constraint firstItem="Qv5-RQ-kUQ" firstAttribute="top" secondItem="w1g-R9-Ofd" secondAttribute="top" constant="33" id="UG4-Js-EZY"/>
+                                            <constraint firstItem="it5-Yr-3Wz" firstAttribute="centerY" secondItem="w1g-R9-Ofd" secondAttribute="centerY" type="default" id="cLz-eJ-4xb"/>
                                             <constraint firstItem="dXf-pk-vXM" firstAttribute="leading" secondItem="V1J-Zv-qOE" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="d78-XP-ZtO"/>
                                         </constraints>
                                     </tableViewCell>
@@ -493,6 +510,7 @@
         <image name="bald-man-white.png" width="30" height="30"/>
         <image name="button-aluminum-pressed.png" width="157" height="49"/>
         <image name="email-white.png" width="30" height="30"/>
+        <image name="image-frame.png" width="300" height="300"/>
         <image name="logo.png" width="260" height="45"/>
         <image name="question-white.png" width="30" height="30"/>
         <image name="stamp-white.png" width="30" height="30"/>
