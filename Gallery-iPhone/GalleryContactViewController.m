@@ -39,10 +39,13 @@
                                   action:@selector(mapAction)];
     self.navigationItem.rightBarButtonItem = rightItem;
     
+    NSString *path = [[NSBundle mainBundle] bundlePath];
+    NSURL *baseURL = [NSURL fileURLWithPath:path];
+    
     NSString *filePath = [[GallerySettingsManager sharedManager] contactPageFilePath];
     NSData *htmlData = [NSData dataWithContentsOfFile:filePath];
     if (htmlData) {
-        [self.webView loadData:htmlData MIMEType:@"text/html" textEncodingName:@"UTF-8" baseURL:[NSURL URLWithString:nil]];
+        [self.webView loadData:htmlData MIMEType:@"text/html" textEncodingName:@"UTF-8" baseURL:baseURL];
     }
     
     self.title  = @"Contact";

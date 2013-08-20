@@ -7,7 +7,7 @@
 //
 
 #import "GalleryAppDelegate.h"
-#import "SHK.h"
+//#import "SHK.h"
 
 @implementation GalleryAppDelegate
 
@@ -21,7 +21,7 @@
     [[UITabBar appearance] setSelectedImageTintColor:[UIColor whiteColor]];
 
     
-    [SHK flushOfflineQueue];
+//    [SHK flushOfflineQueue];
     
     return YES;
 }
