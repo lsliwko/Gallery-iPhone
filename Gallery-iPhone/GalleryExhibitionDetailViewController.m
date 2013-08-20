@@ -8,7 +8,7 @@
 
 #import "GalleryExhibitionDetailViewController.h"
 #import "GUIUtilities.h"
-//#import "SHK.h"
+#import "SHK.h"
 
 @interface GalleryExhibitionDetailViewController ()
 
@@ -80,17 +80,16 @@
 {
     NSLog(@"shareAction");
 
-/*
     // Create the item to share (in this example, a url)
 	NSURL *url = [NSURL URLWithString:self.exhibitionObject.pageUrl];
-	SHKItem *item = [SHKItem URL:url title:@"ShareKit is Awesome!"];
+	SHKItem *item = [SHKItem URL:url title:@"Shared from gallery"];
     
 	// Get the ShareKit action sheet
 	SHKActionSheet *actionSheet = [SHKActionSheet actionSheetForItem:item];
     
 	// Display the action sheet
 	[actionSheet showFromToolbar:self.navigationController.toolbar];
-*/
+
 }
 
 - (IBAction)catalogueAction:(id)sender {
