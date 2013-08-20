@@ -7,6 +7,7 @@
 //
 
 #import "GalleryAppDelegate.h"
+#import "SHK.h"
 
 @implementation GalleryAppDelegate
 
@@ -19,6 +20,9 @@
     //[[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar-active.png"]];
     [[UITabBar appearance] setSelectedImageTintColor:[UIColor whiteColor]];
 
+    
+    [SHK flushOfflineQueue];
+    
     return YES;
 }
 							

@@ -17,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 
+@property (weak, nonatomic) IBOutlet UIButton *catalogueButton;
+
 - (IBAction)openPageAction:(id)sender;
 - (IBAction)catalogueAction:(id)sender;
 @end

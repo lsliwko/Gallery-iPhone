@@ -143,6 +143,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="qJR-F3-CCk"/>
                     <connections>
+                        <outlet property="catalogueButton" destination="lvv-ub-0Rn" id="dMt-3u-l0R"/>
                         <outlet property="descriptionLabel" destination="qSZ-rJ-gFf" id="eMD-GN-8FF"/>
                         <outlet property="imageView" destination="pe8-4r-4Jc" id="kdn-sP-ijD"/>
                         <outlet property="titleLabel" destination="KtM-uZ-NSA" id="zH8-x5-tYl"/>
@@ -206,6 +207,7 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="103" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1J-Zv-qOE">
                                                     <constraints>
+                                                        <constraint firstAttribute="width" constant="56" id="YGe-op-Tde"/>
                                                         <constraint firstAttribute="height" constant="56" id="edC-Gb-8bZ"/>
                                                     </constraints>
                                                 </imageView>
@@ -226,26 +228,17 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="image-frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="it5-Yr-3Wz">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="56" id="PKn-Kv-Ed3"/>
-                                                    </constraints>
-                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="it5-Yr-3Wz" firstAttribute="leading" secondItem="V1J-Zv-qOE" secondAttribute="leading" type="default" id="0QF-Wh-5T3"/>
                                             <constraint firstItem="dXf-pk-vXM" firstAttribute="top" secondItem="w1g-R9-Ofd" secondAttribute="top" constant="8" id="5gD-b5-iKb"/>
-                                            <constraint firstItem="dXf-pk-vXM" firstAttribute="leading" secondItem="it5-Yr-3Wz" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="8GC-m7-T7K"/>
                                             <constraint firstItem="Qv5-RQ-kUQ" firstAttribute="leading" secondItem="V1J-Zv-qOE" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="CER-R0-mao"/>
-                                            <constraint firstItem="it5-Yr-3Wz" firstAttribute="top" secondItem="V1J-Zv-qOE" secondAttribute="top" type="default" id="Qny-ee-a4z"/>
                                             <constraint firstItem="V1J-Zv-qOE" firstAttribute="leading" secondItem="w1g-R9-Ofd" secondAttribute="leading" constant="7" id="RUd-yl-TVP"/>
                                             <constraint firstItem="Qv5-RQ-kUQ" firstAttribute="trailing" secondItem="dXf-pk-vXM" secondAttribute="trailing" type="default" id="SIQ-gt-BLh"/>
-                                            <constraint firstItem="it5-Yr-3Wz" firstAttribute="bottom" secondItem="V1J-Zv-qOE" secondAttribute="bottom" type="default" id="Ttz-rm-vJ7"/>
                                             <constraint firstItem="Qv5-RQ-kUQ" firstAttribute="top" secondItem="w1g-R9-Ofd" secondAttribute="top" constant="33" id="UG4-Js-EZY"/>
-                                            <constraint firstItem="it5-Yr-3Wz" firstAttribute="centerY" secondItem="w1g-R9-Ofd" secondAttribute="centerY" type="default" id="cLz-eJ-4xb"/>
                                             <constraint firstItem="dXf-pk-vXM" firstAttribute="leading" secondItem="V1J-Zv-qOE" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="d78-XP-ZtO"/>
+                                            <constraint firstItem="V1J-Zv-qOE" firstAttribute="centerY" secondItem="w1g-R9-Ofd" secondAttribute="centerY" type="default" id="qd0-fs-EHq"/>
                                         </constraints>
                                     </tableViewCell>
                                 </prototypes>
@@ -515,53 +508,6 @@
         <image name="question-white.png" width="30" height="30"/>
         <image name="stamp-white.png" width="30" height="30"/>
     </resources>
-    <classes>
-        <class className="GalleryAboutViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryAboutViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="GalleryArtistsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryArtistsViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="artistsTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="GalleryContactViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryContactViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="contactAction:"/>
-                <relationship kind="action" name="openPageAction:"/>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="GalleryExhibitionDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryExhibitionDetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="catalogueAction:"/>
-                <relationship kind="action" name="openPageAction:"/>
-                <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="GalleryExhibitionsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryExhibitionsViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="GalleryMapViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryMapViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -13,8 +13,9 @@
 @property (strong) NSString *title;
 @property (strong) NSString *description;
 @property (strong) NSString *imageUrl;
-@property (strong) UIImage *image;
+@property (strong) NSString *pageUrl;
+@property (strong) NSString *catalogueUrl;
 
-- (id)initWithTitle:(NSString*)title description:(NSString*)description imageUrl:(NSString*)imageUrl;
+- (id)initWithTitle:(NSString*)title description:(NSString*)description imageUrl:(NSString*)imageUrl pageUrl:(NSString*)pageUrl catalogueUrl:(NSString*)catalogueUrl;
 
 @end

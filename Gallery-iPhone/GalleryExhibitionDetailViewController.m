@@ -8,6 +8,7 @@
 
 #import "GalleryExhibitionDetailViewController.h"
 #import "GUIUtilities.h"
+#import "SHK.h"
 
 @interface GalleryExhibitionDetailViewController ()
 
@@ -54,6 +55,12 @@
                             imageUrl:self.exhibitionObject.imageUrl
                     placeholderImage:[UIImage imageNamed:@"placeholder.png"]
     ];
+    
+    if (self.exhibitionObject.catalogueUrl) {
+        self.catalogueButton.hidden = NO;
+    } else {
+        self.catalogueButton.hidden = YES;
+    }
 }
 
 - (void)backAction
@@ -71,15 +78,26 @@
 
 - (void)shareAction
 {
-    //TODO implement
     NSLog(@"shareAction");
+    
+    // Create the item to share (in this example, a url)
+	NSURL *url = [NSURL URLWithString:@"http://getsharekit.com"];
+	SHKItem *item = [SHKItem URL:url title:@"ShareKit is Awesome!"];
+    
+	// Get the ShareKit action sheet
+	SHKActionSheet *actionSheet = [SHKActionSheet actionSheetForItem:item];
+    
+	// Display the action sheet
+	[actionSheet showFromToolbar:self.navigationController.toolbar];
 }
 
 - (IBAction)catalogueAction:(id)sender {
     NSLog(@"catalogueAction");
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.exhibitionObject.catalogueUrl]];
 }
 
 - (IBAction)openPageAction:(id)sender {
     NSLog(@"openPageAction");
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.exhibitionObject.pageUrl]];
 }
 @end
