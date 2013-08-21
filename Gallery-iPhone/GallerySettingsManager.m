@@ -78,8 +78,8 @@
 - (NSMutableArray *)loadArtists:(NSError**) error {
     NSLog(@"loadArtists");
     
-    ArtistObject *test1 = [[ArtistObject alloc] initWithName:@"Art toys" description:@"description" imageUrls:[NSMutableArray arrayWithObjects:@"http://www.hua-gallery.com/images/exhibition/img_19_sq_s2.jpg", @"http://www.hua-gallery.com/images/exhibition/img_20_ls_s2.jpg", nil]];
-    ArtistObject *test2 = [[ArtistObject alloc] initWithName:@"Art toys" description:@"description" imageUrls:[NSMutableArray arrayWithObjects:@"http://www.hua-gallery.com/images/exhibition/img_19_sq_s2.jpg", @"http://www.hua-gallery.com/images/exhibition/img_20_ls_s2.jpg", nil]];
+    ArtistObject *test1 = [[ArtistObject alloc] initWithName:@"Art toys" description:@"Art Toys is a collaborative work incorporating art, design, and fashion created by Yue Minjun & KAWS, Zhou Chunya, Zhou Tiehai, Liu Ye, and Jin Nu." imageUrls:[NSMutableArray arrayWithObjects:@"http://www.hua-gallery.com/images/arttoys/YueMinjun.jpg", @"http://www.hua-gallery.com/images/arttoys/ZhouChunya.jpg", @"http://www.hua-gallery.com/images/arttoys/LiuYe.jpg", @"http://www.hua-gallery.com/images/arttoys/ZhouTiehai.jpg", nil]];
+    ArtistObject *test2 = [[ArtistObject alloc] initWithName:@"Beili Liu" description:@" Beili Liu is a contemporary Chinese-American artist, who creates atmospheric large-scale installation works and two-dimensional works. Her works explore and respond to the poetic possibilities of quotidian materials; the pieces look at transformation, time lapse and fragility and speak of complex and delicate human connections." imageUrls:[NSMutableArray arrayWithObjects:@"http://www.hua-gallery.com/images/beililiu/1.jpg", @"http://www.hua-gallery.com/images/beililiu/2.jpg", @"http://www.hua-gallery.com/images/beililiu/3.jpg", nil]];
                            
     return [NSMutableArray arrayWithObjects:test1, test2, nil];
 }
