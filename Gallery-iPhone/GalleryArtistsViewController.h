@@ -10,5 +10,8 @@
 
 @interface GalleryArtistsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-@property (strong, nonatomic) IBOutlet UITableView *artistsTableView;
+@property (strong) NSMutableArray *artists;
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+
 @end

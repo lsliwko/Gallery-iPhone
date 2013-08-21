@@ -10,24 +10,42 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import "UIImageView+WebCache.h"
 
+//static NSMutableDictionary* viewsMessageLabelsMap;
+
 @implementation GUIUtilities
 
-+(void) showErrorMessage:(UIViewController*)uiViewController message:(NSString *)message {
-    [GUIUtilities showMessage:uiViewController message:message foregroundColor:[UIColor whiteColor] backgroundColor:[UIColor redColor]];
+
+//+(NSMutableDictionary*) viewsMessageLabelsMap {
+//    return viewsMessageLabelsMap;
+//}
+
++(UIView*) showErrorMessage:(UIViewController*)uiViewController message:(NSString *)message {
     AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
+    return [GUIUtilities showMessage:uiViewController message:message foregroundColor:[UIColor whiteColor] backgroundColor:[UIColor redColor]];
 }
 
-+(void) showMessage:(UIViewController*)uiViewController message:(NSString *)message foregroundColor:(UIColor *)foregroundColor backgroundColor:(UIColor *)backgroundColor {
++(UIView*) showMessage:(UIViewController*)uiViewController message:(NSString *)message foregroundColor:(UIColor *)foregroundColor backgroundColor:(UIColor *)backgroundColor {
     NSLog(@"Show message %@", message);
     
     __weak UIViewController *weakSelf = uiViewController;
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(
+                                                               10,
+                                                               weakSelf.view.frame.size.height/2-25,
+                                                               weakSelf.view.frame.size.width-20,
+                                                               50)];
+
+    /*
+    //remove old message if it exist
+    UILabel *oldLabel   = [viewsMessageLabelsMap objectForKey:uiViewController.title];
+    if (oldLabel) {
+        [oldLabel removeFromSuperview];
+    }
+    [viewsMessageLabelsMap setObject:label forKey:uiViewController.title];
+    */
+    
     // Update the UI
     dispatch_async(dispatch_get_main_queue(), ^{
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(
-                                                                   10,
-                                                                   weakSelf.view.frame.size.height/2-25,
-                                                                   weakSelf.view.frame.size.width-20,
-                                                                   50)];
         label.backgroundColor = backgroundColor;
         label.textAlignment = NSTextAlignmentCenter;
         label.textColor=foregroundColor;
@@ -63,6 +81,8 @@
                          }];
         
     });
+    
+    return label;
 }
 
 +(void) loadImageViewAsync:(UIViewController*)uiViewController uiImageView:(UIImageView*)uiImageView imageUrl:(NSString *)imageUrl placeholderImage:(UIImage*)placeholderImage {

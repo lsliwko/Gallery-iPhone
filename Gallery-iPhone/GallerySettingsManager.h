@@ -33,7 +33,9 @@
 @property (nonatomic, retain) NSMutableArray *exhibitions;
 
 + (id)sharedManager;
+
 - (NSMutableArray *)loadExhibitions:(NSError**) error;
+- (NSMutableArray *)loadArtists:(NSError**) error;
 
 @end
 

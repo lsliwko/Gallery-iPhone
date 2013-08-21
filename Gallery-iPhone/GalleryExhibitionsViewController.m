@@ -43,8 +43,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     self.title  = @"Exhibitions";
-    //self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"binding_light"]];
-    
+     
     dataLoaded = NO;
     
     self.tableView.backgroundColor = [UIColor clearColor];
@@ -53,9 +52,6 @@
     
     //show spinner
     [self initSpinner];
-    
-    //launchLoadData is triggered in viewWillAppear
-    //[self launchLoadData];
 }
 
 -(void) initSpinner {
@@ -153,9 +149,6 @@
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
     return [UIView new];
-    
-    // If you are not using ARC:
-    // return [[UIView new] autorelease];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {

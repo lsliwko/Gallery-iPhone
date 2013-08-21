@@ -11,9 +11,11 @@
 
 @interface GUIUtilities : NSObject
 
-+(void) showMessage:(UIViewController*)uiViewController message:(NSString *)message foregroundColor:(UIColor *)foregroundColor backgroundColor:(UIColor *)backgroundColor;
++(NSMutableDictionary*)viewsMessageLabelsMap;
 
-+(void) showErrorMessage:(UIViewController*)uiViewController message:(NSString *)message;
++(UIView*) showMessage:(UIViewController*)uiViewController message:(NSString *)message foregroundColor:(UIColor *)foregroundColor backgroundColor:(UIColor *)backgroundColor;
+
++(UIView*) showErrorMessage:(UIViewController*)uiViewController message:(NSString *)message;
 
 +(void) loadImageViewAsync:(UIViewController*)uiViewController uiImageView:(UIImageView*)uiImageView imageUrl:(NSString *)imageUrl placeholderImage:(UIImage*)placeholderImage;
 

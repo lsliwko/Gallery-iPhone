@@ -27,7 +27,6 @@
 		970C35B617C14BF2003B3242 /* bald-man-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C35B417C14BF2003B3242 /* bald-man-white@2x.png */; };
 		970C35BA17C15106003B3242 /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 970C35B917C15106003B3242 /* about.jpg */; };
 		970C35BC17C15238003B3242 /* hua-logo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 970C35BB17C15238003B3242 /* hua-logo2.jpg */; };
-		970C35C017C15751003B3242 /* line-decorator.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C35BF17C15751003B3242 /* line-decorator.png */; };
 		970C384617C15D02003B3242 /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C384417C15D02003B3242 /* tabbar.png */; };
 		970C384717C15D02003B3242 /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C384517C15D02003B3242 /* tabbar@2x.png */; };
 		970C384A17C15D21003B3242 /* menubar.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C384817C15D21003B3242 /* menubar.png */; };
@@ -150,6 +149,9 @@
 		97E4250D17C3712A00AC94C5 /* SHKTwitterForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E424BB17C3712A00AC94C5 /* SHKTwitterForm.m */; };
 		97E4250E17C3712A00AC94C5 /* SHKViewControllerWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E424BD17C3712A00AC94C5 /* SHKViewControllerWrapper.m */; };
 		97E4250F17C3712A00AC94C5 /* UIWebView+SHK.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E424BF17C3712A00AC94C5 /* UIWebView+SHK.m */; };
+		97F2EAC217C3F15300066C4C /* ArtistObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F2EAC117C3F15300066C4C /* ArtistObject.m */; };
+		97F2EAC617C3F99900066C4C /* line-decorator.png in Resources */ = {isa = PBXBuildFile; fileRef = 97F2EAC517C3F99900066C4C /* line-decorator.png */; };
+		97F2EAC917C4020600066C4C /* GalleryArtistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F2EAC817C4020600066C4C /* GalleryArtistDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -173,7 +175,6 @@
 		970C35B417C14BF2003B3242 /* bald-man-white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bald-man-white@2x.png"; sourceTree = "<group>"; };
 		970C35B917C15106003B3242 /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = about.jpg; sourceTree = "<group>"; };
 		970C35BB17C15238003B3242 /* hua-logo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hua-logo2.jpg"; sourceTree = "<group>"; };
-		970C35BF17C15751003B3242 /* line-decorator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line-decorator.png"; sourceTree = "<group>"; };
 		970C384417C15D02003B3242 /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
 		970C384517C15D02003B3242 /* tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar@2x.png"; sourceTree = "<group>"; };
 		970C384817C15D21003B3242 /* menubar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menubar.png; sourceTree = "<group>"; };
@@ -391,6 +392,11 @@
 		97E424BD17C3712A00AC94C5 /* SHKViewControllerWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKViewControllerWrapper.m; sourceTree = "<group>"; };
 		97E424BE17C3712A00AC94C5 /* UIWebView+SHK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+SHK.h"; sourceTree = "<group>"; };
 		97E424BF17C3712A00AC94C5 /* UIWebView+SHK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+SHK.m"; sourceTree = "<group>"; };
+		97F2EAC017C3F15300066C4C /* ArtistObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistObject.h; sourceTree = "<group>"; };
+		97F2EAC117C3F15300066C4C /* ArtistObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistObject.m; sourceTree = "<group>"; };
+		97F2EAC517C3F99900066C4C /* line-decorator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line-decorator.png"; sourceTree = "<group>"; };
+		97F2EAC717C4020600066C4C /* GalleryArtistDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryArtistDetailViewController.h; sourceTree = "<group>"; };
+		97F2EAC817C4020600066C4C /* GalleryArtistDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryArtistDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -417,6 +423,7 @@
 		970C35C117C15C9B003B3242 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				97F2EAC517C3F99900066C4C /* line-decorator.png */,
 				970D4AE117C345BC00F0CD49 /* image-frame.png */,
 				970C39E317C26524003B3242 /* button-black-pressed.png */,
 				970C39E417C26524003B3242 /* button-black-pressed@2x.png */,
@@ -448,7 +455,6 @@
 			isa = PBXGroup;
 			children = (
 				970C35C117C15C9B003B3242 /* ui */,
-				970C35BF17C15751003B3242 /* line-decorator.png */,
 				970C35BB17C15238003B3242 /* hua-logo2.jpg */,
 				970C35B917C15106003B3242 /* about.jpg */,
 				970CBDCA17C13A9B003B3242 /* Icons */,
@@ -565,6 +571,8 @@
 				973CEA8F17BFEDD200116F7C /* GalleryMapViewController.m */,
 				970CBDBF17C0D89B003B3242 /* GalleryAboutViewController.h */,
 				970CBDC017C0D89B003B3242 /* GalleryAboutViewController.m */,
+				97F2EAC717C4020600066C4C /* GalleryArtistDetailViewController.h */,
+				97F2EAC817C4020600066C4C /* GalleryArtistDetailViewController.m */,
 			);
 			name = GUI;
 			sourceTree = "<group>";
@@ -574,6 +582,8 @@
 			children = (
 				973200F717BE58A300D5E0E8 /* ExhibitionObject.h */,
 				973200F817BE58A300D5E0E8 /* ExhibitionObject.m */,
+				97F2EAC017C3F15300066C4C /* ArtistObject.h */,
+				97F2EAC117C3F15300066C4C /* ArtistObject.m */,
 			);
 			name = Domain;
 			sourceTree = "<group>";
@@ -859,7 +869,6 @@
 				970C35B617C14BF2003B3242 /* bald-man-white@2x.png in Resources */,
 				970C35BA17C15106003B3242 /* about.jpg in Resources */,
 				970C35BC17C15238003B3242 /* hua-logo2.jpg in Resources */,
-				970C35C017C15751003B3242 /* line-decorator.png in Resources */,
 				970C384617C15D02003B3242 /* tabbar.png in Resources */,
 				970C384717C15D02003B3242 /* tabbar@2x.png in Resources */,
 				970C384A17C15D21003B3242 /* menubar.png in Resources */,
@@ -876,6 +885,7 @@
 				97E424CA17C3712A00AC94C5 /* FBConnect.bundle in Resources */,
 				97E424D617C3712A00AC94C5 /* Localizable.bundle in Resources */,
 				97E4250A17C3712A00AC94C5 /* SHKSharers.plist in Resources */,
+				97F2EAC617C3F99900066C4C /* line-decorator.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -973,6 +983,8 @@
 				97E4250D17C3712A00AC94C5 /* SHKTwitterForm.m in Sources */,
 				97E4250E17C3712A00AC94C5 /* SHKViewControllerWrapper.m in Sources */,
 				97E4250F17C3712A00AC94C5 /* UIWebView+SHK.m in Sources */,
+				97F2EAC217C3F15300066C4C /* ArtistObject.m in Sources */,
+				97F2EAC917C4020600066C4C /* GalleryArtistDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

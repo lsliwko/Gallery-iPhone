@@ -168,8 +168,27 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="201" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnV-Dg-dTK">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="Cyw-e1-7PI"/>
+                                                <constraint firstAttribute="width" constant="306" id="G9d-gD-qeR"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="CnV-Dg-dTK" firstAttribute="top" secondItem="NHk-D6-tXL" secondAttribute="top" constant="11" id="RTa-CI-rl4"/>
+                                    <constraint firstItem="CnV-Dg-dTK" firstAttribute="centerX" secondItem="NHk-D6-tXL" secondAttribute="centerX" type="default" id="e8X-BY-pM4"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="riX-Ku-7aJ" kind="push" identifier="artistDetailViewSegueId" trigger="accessoryAction" id="FC4-dt-bu9"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -180,11 +199,27 @@
                     <navigationItem key="navigationItem" id="EDg-6e-ZsD"/>
                     <connections>
                         <outlet property="artistsTableView" destination="iSc-bA-dYK" id="o1Z-kH-zFI"/>
+                        <outlet property="tableView" destination="iSc-bA-dYK" id="aix-LL-uF9"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gzU-A5-8IV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1299" y="596"/>
+            <point key="canvasLocation" x="1295" y="596"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EEA-ap-Uak">
+            <objects>
+                <viewController id="riX-Ku-7aJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Grn-SM-uLP">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="e4x-J4-JGh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="moP-NC-crq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1771" y="594"/>
         </scene>
         <!--Gallery Exhibitions View Controller-->
         <scene sceneID="BCi-LE-JOA">
@@ -297,16 +332,18 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pbj-ed-RPK">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ytx-7N-mKI">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adl-Sg-OV0">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="Lue-uU-epl"/>
-                                            <constraint firstAttribute="height" constant="44" id="MiN-QP-FGA"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="Contact" backgroundImage="button-aluminum-pressed.png">
+                                        <state key="normal" title="Contact">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -323,7 +360,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="Open page" backgroundImage="button-aluminum-pressed.png">
+                                        <state key="normal" title="Open page">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -335,34 +372,25 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="adl-Sg-OV0" firstAttribute="leading" secondItem="ytx-7N-mKI" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="E6A-aB-WY2"/>
                                     <constraint firstAttribute="width" constant="320" type="user" id="HWV-X8-V6w"/>
-                                    <constraint firstItem="Gs9-pw-a0c" firstAttribute="top" secondItem="adl-Sg-OV0" secondAttribute="top" type="default" id="LR0-gm-mqK"/>
+                                    <constraint firstItem="Gs9-pw-a0c" firstAttribute="centerY" secondItem="ytx-7N-mKI" secondAttribute="centerY" type="default" id="IpL-31-X4g"/>
+                                    <constraint firstItem="adl-Sg-OV0" firstAttribute="baseline" secondItem="Gs9-pw-a0c" secondAttribute="baseline" type="default" id="UOy-3h-mbb"/>
                                     <constraint firstAttribute="trailing" secondItem="Gs9-pw-a0c" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="f28-5k-VzD"/>
-                                    <constraint firstItem="adl-Sg-OV0" firstAttribute="top" secondItem="ytx-7N-mKI" secondAttribute="top" constant="9" id="gBV-eX-abP"/>
                                     <constraint firstAttribute="height" constant="60" type="user" id="gE3-gf-wZC"/>
-                                    <constraint firstItem="adl-Sg-OV0" firstAttribute="bottom" secondItem="Gs9-pw-a0c" secondAttribute="bottom" type="default" id="qUV-3I-O7z"/>
                                 </constraints>
                             </view>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pbj-ed-RPK">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" type="user" id="gdh-Bx-m0g"/>
-                                </constraints>
-                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Pbj-ed-RPK" firstAttribute="leading" secondItem="UCs-EM-UBl" secondAttribute="leading" type="user" id="F1E-Av-tjw"/>
-                            <constraint firstItem="Pbj-ed-RPK" firstAttribute="leading" secondItem="UCs-EM-UBl" secondAttribute="leading" type="user" id="Kvc-fE-VPe"/>
-                            <constraint firstItem="Pbj-ed-RPK" firstAttribute="trailing" secondItem="UCs-EM-UBl" secondAttribute="trailing" type="user" id="NYg-f8-5gU"/>
-                            <constraint firstItem="ytx-7N-mKI" firstAttribute="leading" secondItem="UCs-EM-UBl" secondAttribute="leading" type="user" id="X99-4A-a6U"/>
-                            <constraint firstItem="ytx-7N-mKI" firstAttribute="bottom" secondItem="UCs-EM-UBl" secondAttribute="bottom" type="default" id="apN-xq-wWh"/>
-                            <constraint firstItem="ytx-7N-mKI" firstAttribute="top" secondItem="Pbj-ed-RPK" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="c6A-lU-NbC"/>
-                            <constraint firstItem="ytx-7N-mKI" firstAttribute="trailing" secondItem="UCs-EM-UBl" secondAttribute="trailing" type="user" id="k1n-q7-iqa"/>
-                            <constraint firstItem="Pbj-ed-RPK" firstAttribute="top" secondItem="UCs-EM-UBl" secondAttribute="top" type="default" id="rS3-tL-O8j"/>
+                            <constraint firstItem="Pbj-ed-RPK" firstAttribute="top" secondItem="UCs-EM-UBl" secondAttribute="top" type="default" id="1on-Q5-Lmm"/>
+                            <constraint firstItem="Pbj-ed-RPK" firstAttribute="leading" secondItem="UCs-EM-UBl" secondAttribute="leading" type="default" id="36D-oz-HOL"/>
+                            <constraint firstItem="ytx-7N-mKI" firstAttribute="bottom" secondItem="UCs-EM-UBl" secondAttribute="bottom" type="default" id="8tv-wi-rSA"/>
+                            <constraint firstItem="Pbj-ed-RPK" firstAttribute="trailing" secondItem="UCs-EM-UBl" secondAttribute="trailing" type="default" id="A5p-92-NuE"/>
+                            <constraint firstItem="ytx-7N-mKI" firstAttribute="top" secondItem="Pbj-ed-RPK" secondAttribute="bottom" type="user" id="Q48-2n-zqT"/>
+                            <constraint firstItem="ytx-7N-mKI" firstAttribute="leading" secondItem="UCs-EM-UBl" secondAttribute="leading" type="default" id="nD4-0F-VHg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Wrf-d6-hlS"/>
@@ -501,13 +529,60 @@
     </scenes>
     <resources>
         <image name="bald-man-white.png" width="30" height="30"/>
-        <image name="button-aluminum-pressed.png" width="157" height="49"/>
         <image name="email-white.png" width="30" height="30"/>
         <image name="image-frame.png" width="300" height="300"/>
         <image name="logo.png" width="260" height="45"/>
         <image name="question-white.png" width="30" height="30"/>
         <image name="stamp-white.png" width="30" height="30"/>
     </resources>
+    <classes>
+        <class className="GalleryAboutViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryAboutViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="GalleryArtistsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryArtistsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="GalleryContactViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryContactViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="contactAction:"/>
+                <relationship kind="action" name="openPageAction:"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="GalleryExhibitionDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryExhibitionDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="catalogueAction:"/>
+                <relationship kind="action" name="openPageAction:"/>
+                <relationship kind="outlet" name="catalogueButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="GalleryExhibitionsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryExhibitionsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="GalleryMapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryMapViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

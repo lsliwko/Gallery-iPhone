@@ -9,6 +9,7 @@
 #import "GallerySettingsManager.h"
 #import <MapKit/MapKit.h>
 #import "ExhibitionObject.h";
+#import "ArtistObject.h";
 
 @implementation GallerySettingsManager
 
@@ -53,7 +54,7 @@
 
 - (NSMutableArray *)loadExhibitions:(NSError**) error {
     NSLog(@"loadExhibitions");
-    
+
     NSString *url   = @"http://www.hua-gallery.com/exhibition_data.xml";
     NSData* data = [NSData
                     dataWithContentsOfURL:[NSURL URLWithString:url]
@@ -72,6 +73,15 @@
     ExhibitionObject *test3 = [[ExhibitionObject alloc] initWithTitle:@"Nothing is Still Sheng Qi’s Political Symbolism and Le Guo’s Abstract Journey" description:@"Hua Gallery is pleased to announce a partnership with Aria Art Gallery in Florence where we will host a show of Le Guo and Sheng Qi, introducing their striking art to a new audience." imageUrl:@"http://www.hua-gallery.com/images/exhibition/img_20_ls_s2.jpg" pageUrl:@"http://www.hua-gallery.com/exhibition_details_20.html" catalogueUrl:nil];
     
     return [NSMutableArray arrayWithObjects:test1, test2, test3, nil];
+}
+
+- (NSMutableArray *)loadArtists:(NSError**) error {
+    NSLog(@"loadArtists");
+    
+    ArtistObject *test1 = [[ArtistObject alloc] initWithName:@"Art toys" description:@"description" imageUrls:[NSMutableArray arrayWithObjects:@"http://www.hua-gallery.com/images/exhibition/img_19_sq_s2.jpg", @"http://www.hua-gallery.com/images/exhibition/img_20_ls_s2.jpg", nil]];
+    ArtistObject *test2 = [[ArtistObject alloc] initWithName:@"Art toys" description:@"description" imageUrls:[NSMutableArray arrayWithObjects:@"http://www.hua-gallery.com/images/exhibition/img_19_sq_s2.jpg", @"http://www.hua-gallery.com/images/exhibition/img_20_ls_s2.jpg", nil]];
+                           
+    return [NSMutableArray arrayWithObjects:test1, test2, nil];
 }
 
 @end
