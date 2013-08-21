@@ -11,6 +11,7 @@
 #import "ArtistObject.h"
 #import "GallerySettingsManager.h"
 #import "GalleryArtistDetailViewController.h"
+#import "GalleryArtistImagesCarouselViewController.h"
 
 @interface GalleryArtistsViewController () {
     
@@ -222,18 +223,18 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"Selected row %i", indexPath.item);
-    [self performSegueWithIdentifier:@"artistDetailViewSegueId" sender:self];
+    [self performSegueWithIdentifier:@"artistImagesCarouselViewSegueId" sender:self];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NSLog(@"prepareForSegue: %@", segue.identifier);
     
-    if ([segue.identifier isEqualToString:@"artistDetailViewSegueId"])
+    if ([segue.identifier isEqualToString:@"artistImagesCarouselViewSegueId"])
     {
         ArtistObject *artistObject = [self.artists objectAtIndex:[self.tableView indexPathForSelectedRow].row];
         
-        GalleryArtistDetailViewController *viewController = [segue destinationViewController];
+        GalleryArtistImagesCarouselViewController *viewController = [segue destinationViewController];
         viewController.artistObject = artistObject;
     }
 }
