@@ -12,6 +12,5 @@
 
 @property (strong) NSMutableArray *artists;
 
-@property (strong, nonatomic) IBOutlet UITableView *tableView;
-
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end

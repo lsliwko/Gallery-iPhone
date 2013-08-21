@@ -17,7 +17,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="CVp-Kn-oEg" kind="relationship" relationship="viewControllers" id="uM8-VP-8Jo"/>
-                        <segue destination="hIF-0v-c3D" kind="relationship" relationship="viewControllers" id="W9G-I5-UqP"/>
+                        <segue destination="it6-Ni-cg2" kind="relationship" relationship="viewControllers" id="RDD-uO-bdr"/>
                         <segue destination="WO0-LR-4Sl" kind="relationship" relationship="viewControllers" id="bJR-jF-ggk"/>
                         <segue destination="bFy-Ez-dtx" kind="relationship" relationship="viewControllers" id="1ss-Gk-NRB"/>
                     </connections>
@@ -151,75 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HgP-z0-kJE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1925" y="-65"/>
-        </scene>
-        <!--Gallery Artists View Controller-->
-        <scene sceneID="xfD-Td-npj">
-            <objects>
-                <tableViewController id="CZ3-zZ-iBV" customClass="GalleryArtistsViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="iSc-bA-dYK">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="NHk-D6-tXL">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="201" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnV-Dg-dTK">
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="Cyw-e1-7PI"/>
-                                                <constraint firstAttribute="width" constant="306" id="G9d-gD-qeR"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                                <constraints>
-                                    <constraint firstItem="CnV-Dg-dTK" firstAttribute="top" secondItem="NHk-D6-tXL" secondAttribute="top" constant="11" id="RTa-CI-rl4"/>
-                                    <constraint firstItem="CnV-Dg-dTK" firstAttribute="centerX" secondItem="NHk-D6-tXL" secondAttribute="centerX" type="default" id="e8X-BY-pM4"/>
-                                </constraints>
-                                <connections>
-                                    <segue destination="riX-Ku-7aJ" kind="push" identifier="artistDetailViewSegueId" trigger="accessoryAction" id="FC4-dt-bu9"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="CZ3-zZ-iBV" id="fpE-vi-CbQ"/>
-                            <outlet property="delegate" destination="CZ3-zZ-iBV" id="Chf-Am-1l4"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="EDg-6e-ZsD"/>
-                    <connections>
-                        <outlet property="artistsTableView" destination="iSc-bA-dYK" id="o1Z-kH-zFI"/>
-                        <outlet property="tableView" destination="iSc-bA-dYK" id="aix-LL-uF9"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gzU-A5-8IV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1295" y="596"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="EEA-ap-Uak">
-            <objects>
-                <viewController id="riX-Ku-7aJ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Grn-SM-uLP">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="e4x-J4-JGh"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="moP-NC-crq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1771" y="594"/>
+            <point key="canvasLocation" x="1776" y="-71"/>
         </scene>
         <!--Gallery Exhibitions View Controller-->
         <scene sceneID="BCi-LE-JOA">
@@ -302,27 +234,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rb7-9G-fcg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1295" y="-71"/>
-        </scene>
-        <!--Navigation Controller - Artists-->
-        <scene sceneID="ekp-zm-LAe">
-            <objects>
-                <navigationController id="hIF-0v-c3D" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Artists" image="bald-man-white.png" id="ciC-eo-TI6"/>
-                    <toolbarItems/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="k06-Sk-yH9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="CZ3-zZ-iBV" kind="relationship" relationship="rootViewController" id="fXB-mj-xk4"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JPn-MJ-52e" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="773" y="596"/>
         </scene>
         <!--Gallery Contact View Controller-->
         <scene sceneID="OlS-6s-MpZ">
@@ -526,6 +437,101 @@
             </objects>
             <point key="canvasLocation" x="769" y="-71"/>
         </scene>
+        <!--Gallery Artists View Controller-->
+        <scene sceneID="PeW-IY-1JC">
+            <objects>
+                <viewController id="fYg-mX-ZXf" customClass="GalleryArtistsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WbT-XB-RcQ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="abp-5T-K6H">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="ArtistsTableCell" rowHeight="50" id="uQ2-Ha-FPI">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="201" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABA-tV-CFq">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="300" id="bWG-a5-YjC"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="ABA-tV-CFq" firstAttribute="top" secondItem="uQ2-Ha-FPI" secondAttribute="top" constant="14" id="2Jw-Ax-vau"/>
+                                            <constraint firstItem="ABA-tV-CFq" firstAttribute="centerX" secondItem="uQ2-Ha-FPI" secondAttribute="centerX" type="default" id="pX7-l1-PPR"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="fYg-mX-ZXf" id="bwk-Pv-ArS"/>
+                                    <outlet property="delegate" destination="fYg-mX-ZXf" id="acI-sd-H2d"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="abp-5T-K6H" firstAttribute="bottom" secondItem="WbT-XB-RcQ" secondAttribute="bottom" type="default" id="3y7-kF-E09"/>
+                            <constraint firstItem="abp-5T-K6H" firstAttribute="trailing" secondItem="WbT-XB-RcQ" secondAttribute="trailing" type="default" id="Uzo-KY-tpr"/>
+                            <constraint firstItem="abp-5T-K6H" firstAttribute="top" secondItem="WbT-XB-RcQ" secondAttribute="top" type="default" id="jzC-ea-jJ6"/>
+                            <constraint firstItem="abp-5T-K6H" firstAttribute="leading" secondItem="WbT-XB-RcQ" secondAttribute="leading" type="default" id="vUA-Wd-ATL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RJM-2g-PO6"/>
+                    <connections>
+                        <outlet property="tableView" destination="abp-5T-K6H" id="gBl-2o-smB"/>
+                        <segue destination="cEr-Qi-k97" kind="push" identifier="artistDetailViewSegueId" id="O8H-Bf-gDu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Gr-Rw-iMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1303" y="591"/>
+        </scene>
+        <!--Gallery Artist Detail View Controller-->
+        <scene sceneID="m9e-lj-OdJ">
+            <objects>
+                <viewController id="cEr-Qi-k97" customClass="GalleryArtistDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i9V-Xw-45J">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BcG-qD-J7s"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zp8-pT-H98" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1776" y="591"/>
+        </scene>
+        <!--Navigation Controller - Artists-->
+        <scene sceneID="sor-vb-ssW">
+            <objects>
+                <navigationController id="it6-Ni-cg2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Artists" image="bald-man-white.png" id="Qwo-l1-pTE"/>
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="l2A-1w-MH5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fYg-mX-ZXf" kind="relationship" relationship="rootViewController" id="tSA-rm-Lw2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lFh-Qg-BRM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="777" y="591"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bald-man-white.png" width="30" height="30"/>
@@ -541,6 +547,9 @@
             <relationships>
                 <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
             </relationships>
+        </class>
+        <class className="GalleryArtistDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryArtistDetailViewController.h"/>
         </class>
         <class className="GalleryArtistsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryArtistsViewController.h"/>

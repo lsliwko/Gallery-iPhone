@@ -160,7 +160,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ExhibitionsTableCell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ArtistsTableCell"];
     
     
     //return empty cell
