@@ -41,6 +41,7 @@
     self.title  = self.artistObject.name;
     
     self.carouselView.type = iCarouselTypeLinear;
+    self.carouselView.pagingEnabled = YES;
 
 }
 
@@ -66,7 +67,6 @@
 
 - (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
 {
-    NSLog(@"Number of iitems %i", [self.artistObject.imageUrls count]);
     return [self.artistObject.imageUrls count];
 }
 
@@ -74,7 +74,7 @@
 - (NSUInteger)numberOfVisibleItemsInCarousel:(iCarousel *)carousel
 {
     //limit the number of items views loaded concurrently (for performance reasons)
-    return 1;
+    return 3;
 }
 
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index reusingView:(UIView *)view {
@@ -116,13 +116,13 @@
 - (CGFloat)carouselItemWidth:(iCarousel *)carousel
 {
     //usually this should be slightly wider than the item views
-    return 320+2;
+    return 320+5;
 }
 
 - (BOOL)carouselShouldWrap:(iCarousel *)carousel
 {
     //wrap all carousels
-    return NO;
+    return YES;
 }
 
 @end
