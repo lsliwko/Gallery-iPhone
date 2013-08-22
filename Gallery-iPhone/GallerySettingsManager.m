@@ -55,7 +55,7 @@
 - (NSMutableArray *)loadExhibitions:(NSError**) error {
     NSLog(@"loadExhibitions");
 
-    NSString *url   = @"http://www.hua-gallery.com/exhibition_data.xml";
+/*    NSString *url   = @"http://www.hua-gallery.com/exhibition_data.xml";
     NSData* data = [NSData
                     dataWithContentsOfURL:[NSURL URLWithString:url]
                     options:NSDataReadingUncached
@@ -67,6 +67,7 @@
     } else {
         NSLog(@"Loaded %i bytes from [%@]", data.length, url);
     }
+ */
     
     ExhibitionObject *test1 = [[ExhibitionObject alloc] initWithTitle:@"Between Spiritual and Material Spaces: the Photographic World of the Gao Brothers" description:@"Hua Gallery is honoured to announce the exhibition of internationally recognised Chinese artists the Gao Brothers." imageUrl:@"http://www.hua-gallery.com/images/exhibition/img14s2.jpg" pageUrl:@"http://www.hua-gallery.com/exhibition_details_14.html" catalogueUrl:@"http://www.hua-gallery.com/pdf/catalogue/gao_brothers.pdf"];
     ExhibitionObject *test2 = [[ExhibitionObject alloc] initWithTitle:@"Sheng Qi: a New Wind of Economics" description:@"Hua Gallery is delighted to host the exhibition of firmly established artist Sheng Qi at Playboy Club in Mayfair." imageUrl:@"http://www.hua-gallery.com/images/exhibition/img_19_sq_s2.jpg" pageUrl:@"http://www.hua-gallery.com/exhibition_details_19.html" catalogueUrl:nil];

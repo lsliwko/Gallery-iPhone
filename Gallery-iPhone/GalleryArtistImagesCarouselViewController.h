@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "ArtistObject.h"
+#import "iCarousel.h"
+#import "UIImageView+WebCache.h"
 
-@interface GalleryArtistImagesCarouselViewController : UIViewController
+@interface GalleryArtistImagesCarouselViewController : UIViewController <iCarouselDataSource, iCarouselDelegate, SDWebImageManagerDelegate>
 
 @property (strong) ArtistObject *artistObject;
 
+@property (weak, nonatomic) IBOutlet iCarousel *carouselView;
 @end

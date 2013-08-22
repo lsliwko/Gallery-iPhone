@@ -49,6 +49,13 @@
 		970D4C9F17C34F9500F0CD49 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970D4C9E17C34F9500F0CD49 /* SystemConfiguration.framework */; };
 		970D4CA117C34F9E00F0CD49 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970D4CA017C34F9E00F0CD49 /* Security.framework */; };
 		9717C6C517C5656900E42F57 /* Hue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9717C6C417C5656900E42F57 /* Hue.jpg */; };
+		9717C6CE17C5724C00E42F57 /* Bear.png in Resources */ = {isa = PBXBuildFile; fileRef = 9717C6C717C5724C00E42F57 /* Bear.png */; };
+		9717C6CF17C5724C00E42F57 /* Birds.png in Resources */ = {isa = PBXBuildFile; fileRef = 9717C6C817C5724C00E42F57 /* Birds.png */; };
+		9717C6D017C5724C00E42F57 /* Chimp.png in Resources */ = {isa = PBXBuildFile; fileRef = 9717C6C917C5724C00E42F57 /* Chimp.png */; };
+		9717C6D117C5724C00E42F57 /* Giraffe.png in Resources */ = {isa = PBXBuildFile; fileRef = 9717C6CA17C5724C00E42F57 /* Giraffe.png */; };
+		9717C6D217C5724C00E42F57 /* Goat.png in Resources */ = {isa = PBXBuildFile; fileRef = 9717C6CB17C5724C00E42F57 /* Goat.png */; };
+		9717C6D317C5724C00E42F57 /* Tiger.png in Resources */ = {isa = PBXBuildFile; fileRef = 9717C6CC17C5724C00E42F57 /* Tiger.png */; };
+		9717C6D417C5724C00E42F57 /* Zebra.png in Resources */ = {isa = PBXBuildFile; fileRef = 9717C6CD17C5724C00E42F57 /* Zebra.png */; };
 		973200C217BE56B700D5E0E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973200C117BE56B700D5E0E8 /* UIKit.framework */; };
 		973200C417BE56B700D5E0E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973200C317BE56B700D5E0E8 /* Foundation.framework */; };
 		973200C617BE56B700D5E0E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973200C517BE56B700D5E0E8 /* CoreGraphics.framework */; };
@@ -203,6 +210,13 @@
 		970D4C9E17C34F9500F0CD49 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		970D4CA017C34F9E00F0CD49 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		9717C6C417C5656900E42F57 /* Hue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hue.jpg; sourceTree = "<group>"; };
+		9717C6C717C5724C00E42F57 /* Bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bear.png; sourceTree = "<group>"; };
+		9717C6C817C5724C00E42F57 /* Birds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Birds.png; sourceTree = "<group>"; };
+		9717C6C917C5724C00E42F57 /* Chimp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chimp.png; sourceTree = "<group>"; };
+		9717C6CA17C5724C00E42F57 /* Giraffe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Giraffe.png; sourceTree = "<group>"; };
+		9717C6CB17C5724C00E42F57 /* Goat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Goat.png; sourceTree = "<group>"; };
+		9717C6CC17C5724C00E42F57 /* Tiger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tiger.png; sourceTree = "<group>"; };
+		9717C6CD17C5724C00E42F57 /* Zebra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Zebra.png; sourceTree = "<group>"; };
 		973200BE17BE56B700D5E0E8 /* Gallery-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gallery-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		973200C117BE56B700D5E0E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		973200C317BE56B700D5E0E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -462,6 +476,7 @@
 		970CBDBA17C0CC8D003B3242 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9717C6C617C5723800E42F57 /* test */,
 				9717C6C417C5656900E42F57 /* Hue.jpg */,
 				970C35C117C15C9B003B3242 /* ui */,
 				970C35BB17C15238003B3242 /* hua-logo2.jpg */,
@@ -498,6 +513,20 @@
 				970C359017C13DD8003B3242 /* children-white@2x.png */,
 			);
 			name = Icons;
+			sourceTree = "<group>";
+		};
+		9717C6C617C5723800E42F57 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				9717C6C717C5724C00E42F57 /* Bear.png */,
+				9717C6C817C5724C00E42F57 /* Birds.png */,
+				9717C6C917C5724C00E42F57 /* Chimp.png */,
+				9717C6CA17C5724C00E42F57 /* Giraffe.png */,
+				9717C6CB17C5724C00E42F57 /* Goat.png */,
+				9717C6CC17C5724C00E42F57 /* Tiger.png */,
+				9717C6CD17C5724C00E42F57 /* Zebra.png */,
+			);
+			name = test;
 			sourceTree = "<group>";
 		};
 		973200B517BE56B700D5E0E8 = {
@@ -900,6 +929,13 @@
 				97E4250A17C3712A00AC94C5 /* SHKSharers.plist in Resources */,
 				97F2EAC617C3F99900066C4C /* line-decorator.png in Resources */,
 				9717C6C517C5656900E42F57 /* Hue.jpg in Resources */,
+				9717C6CE17C5724C00E42F57 /* Bear.png in Resources */,
+				9717C6CF17C5724C00E42F57 /* Birds.png in Resources */,
+				9717C6D017C5724C00E42F57 /* Chimp.png in Resources */,
+				9717C6D117C5724C00E42F57 /* Giraffe.png in Resources */,
+				9717C6D217C5724C00E42F57 /* Goat.png in Resources */,
+				9717C6D317C5724C00E42F57 /* Tiger.png in Resources */,
+				9717C6D417C5724C00E42F57 /* Zebra.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1097,6 +1133,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gallery-iPhone/Gallery-iPhone-Prefix.pch";
 				INFOPLIST_FILE = "Gallery-iPhone/Gallery-iPhone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1109,6 +1146,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gallery-iPhone/Gallery-iPhone-Prefix.pch";
 				INFOPLIST_FILE = "Gallery-iPhone/Gallery-iPhone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

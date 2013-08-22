@@ -81,10 +81,7 @@
     __weak GalleryExhibitionsViewController *weakSelf = self;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,
                                              (unsigned long)NULL), ^(void) {
-        
-        // simulate loading delay from internet, show spinner
-        //[NSThread sleepForTimeInterval:1];
-        
+ 
         // Do work that will take a long time
         // Store data in member variables, etc.
         [weakSelf loadData];
@@ -178,6 +175,7 @@
                          uiImageView:imageView
                             imageUrl:exhibitionObject.imageUrl
                     placeholderImage:[UIImage imageNamed:@"placeholder.png"]
+                         forceResize:NO
     ];
     
     cell.contentView.backgroundColor = [UIColor whiteColor];

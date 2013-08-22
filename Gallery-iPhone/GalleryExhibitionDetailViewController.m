@@ -54,6 +54,7 @@
                          uiImageView:self.imageView
                             imageUrl:self.exhibitionObject.imageUrl
                     placeholderImage:[UIImage imageNamed:@"placeholder.png"]
+                         forceResize:NO
     ];
     
     if (self.exhibitionObject.catalogueUrl) {

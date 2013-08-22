@@ -85,11 +85,29 @@
     return label;
 }
 
-+(void) loadImageViewAsync:(UIViewController*)uiViewController uiImageView:(UIImageView*)uiImageView imageUrl:(NSString *)imageUrl placeholderImage:(UIImage*)placeholderImage {
++ (UIImage *)resizeImage:(UIImage *)image scaledToSize:(CGSize)newSize {
+    //UIGraphicsBeginImageContext(newSize);
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
+    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
+
++(void) loadImageViewAsync:(UIViewController*)uiViewController uiImageView:(UIImageView*)uiImageView imageUrl:(NSString *)imageUrl placeholderImage:(UIImage*)placeholderImage forceResize:(Boolean *)forceResize {
+    
+    CGRect savedFrame   = uiImageView.frame;
+    NSLog(@"Saved Frame: %f %f %f %f",
+          savedFrame.origin.x, savedFrame.origin.y,
+          savedFrame.size.height, savedFrame.size.width
+          );
+    
+    __weak UIImageView *weakUIImageView  = uiImageView;
+    
     // load asynchroniciously with SDWebImage
     [uiImageView setImageWithURL:[NSURL URLWithString:imageUrl]
           placeholderImage:placeholderImage
-                   options:SDWebImageProgressiveDownload
+                   options:0
                   progress:^(NSUInteger receivedSize, long long expectedSize) {
                       // progression tracking code
                       NSLog(@"Loading image [%@] %i/%lli", imageUrl, receivedSize, expectedSize);
@@ -101,6 +119,10 @@
                          [GUIUtilities showErrorMessage:uiViewController message:@"Connection error"];
                      } else {
                          NSLog(@"Image [%@] loaded", imageUrl);
+                         
+                         if (forceResize) {
+                             weakUIImageView.image  = [GUIUtilities resizeImage:image scaledToSize:CGSizeMake(savedFrame.size.height, savedFrame.size.width)];
+                         }
                      }
                  }
     ];

@@ -509,7 +509,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zp8-pT-H98" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2130" y="183"/>
+            <point key="canvasLocation" x="2254" y="591"/>
         </scene>
         <!--Gallery Artist Images Carousel View Controller-->
         <scene sceneID="e6T-BE-bNQ">
@@ -518,9 +518,27 @@
                     <view key="view" contentMode="scaleToFill" id="xLe-ls-v4b">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0LL-hl-quS" customClass="iCarousel">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="DMp-GS-XPw" id="TEs-9r-6OW"/>
+                                    <outlet property="delegate" destination="DMp-GS-XPw" id="fqd-rP-gme"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0LL-hl-quS" firstAttribute="trailing" secondItem="xLe-ls-v4b" secondAttribute="trailing" type="default" id="DP7-b7-22b"/>
+                            <constraint firstItem="0LL-hl-quS" firstAttribute="top" secondItem="xLe-ls-v4b" secondAttribute="top" type="default" id="GTI-zs-s3b"/>
+                            <constraint firstItem="0LL-hl-quS" firstAttribute="leading" secondItem="xLe-ls-v4b" secondAttribute="leading" type="default" id="Q4l-Sa-axs"/>
+                            <constraint firstItem="0LL-hl-quS" firstAttribute="bottom" secondItem="xLe-ls-v4b" secondAttribute="bottom" type="default" id="lQD-el-Y5g"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="unj-mL-brh"/>
+                    <connections>
+                        <outlet property="carouselView" destination="0LL-hl-quS" id="qYH-HU-p1w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Med-XV-cYz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -568,6 +586,9 @@
         </class>
         <class className="GalleryArtistImagesCarouselViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryArtistImagesCarouselViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="carouselView" candidateClass="iCarousel"/>
+            </relationships>
         </class>
         <class className="GalleryArtistsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryArtistsViewController.h"/>
@@ -608,6 +629,13 @@
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="iCarousel" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iCarousel.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dataSource"/>
+                <relationship kind="outlet" name="delegate"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
