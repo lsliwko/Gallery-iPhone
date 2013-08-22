@@ -56,6 +56,8 @@
 		9717C6D217C5724C00E42F57 /* Goat.png in Resources */ = {isa = PBXBuildFile; fileRef = 9717C6CB17C5724C00E42F57 /* Goat.png */; };
 		9717C6D317C5724C00E42F57 /* Tiger.png in Resources */ = {isa = PBXBuildFile; fileRef = 9717C6CC17C5724C00E42F57 /* Tiger.png */; };
 		9717C6D417C5724C00E42F57 /* Zebra.png in Resources */ = {isa = PBXBuildFile; fileRef = 9717C6CD17C5724C00E42F57 /* Zebra.png */; };
+		9717C6D617C6D6AA00E42F57 /* photo-album-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 9717C6D517C6D6AA00E42F57 /* photo-album-white.png */; };
+		9717C6D817C6D6B700E42F57 /* photo-album-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9717C6D717C6D6B700E42F57 /* photo-album-white@2x.png */; };
 		973200C217BE56B700D5E0E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973200C117BE56B700D5E0E8 /* UIKit.framework */; };
 		973200C417BE56B700D5E0E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973200C317BE56B700D5E0E8 /* Foundation.framework */; };
 		973200C617BE56B700D5E0E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973200C517BE56B700D5E0E8 /* CoreGraphics.framework */; };
@@ -217,6 +219,8 @@
 		9717C6CB17C5724C00E42F57 /* Goat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Goat.png; sourceTree = "<group>"; };
 		9717C6CC17C5724C00E42F57 /* Tiger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tiger.png; sourceTree = "<group>"; };
 		9717C6CD17C5724C00E42F57 /* Zebra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Zebra.png; sourceTree = "<group>"; };
+		9717C6D517C6D6AA00E42F57 /* photo-album-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-album-white.png"; sourceTree = "<group>"; };
+		9717C6D717C6D6B700E42F57 /* photo-album-white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-album-white@2x.png"; sourceTree = "<group>"; };
 		973200BE17BE56B700D5E0E8 /* Gallery-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gallery-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		973200C117BE56B700D5E0E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		973200C317BE56B700D5E0E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -445,6 +449,8 @@
 		970C35C117C15C9B003B3242 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				9717C6D717C6D6B700E42F57 /* photo-album-white@2x.png */,
+				9717C6D517C6D6AA00E42F57 /* photo-album-white.png */,
 				97F2EAC517C3F99900066C4C /* line-decorator.png */,
 				970D4AE117C345BC00F0CD49 /* image-frame.png */,
 				970C39E317C26524003B3242 /* button-black-pressed.png */,
@@ -936,6 +942,8 @@
 				9717C6D217C5724C00E42F57 /* Goat.png in Resources */,
 				9717C6D317C5724C00E42F57 /* Tiger.png in Resources */,
 				9717C6D417C5724C00E42F57 /* Zebra.png in Resources */,
+				9717C6D617C6D6AA00E42F57 /* photo-album-white.png in Resources */,
+				9717C6D817C6D6B700E42F57 /* photo-album-white@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -38,10 +38,10 @@
                                    action:@selector(backAction)];
     self.navigationItem.leftBarButtonItem = backButton;
     
-    self.title  = self.artistObject.name;
-    
     self.carouselView.type = iCarouselTypeLinear;
     self.carouselView.pagingEnabled = YES;
+    
+    [self updateTitle];
 
 }
 
@@ -50,6 +50,11 @@
     NSLog(@"actionBack");
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+-(void) updateTitle {
+    self.title  = [NSString stringWithFormat:@"%@ %i/%i", self.artistObject.name, self.carouselView.currentItemIndex+1, self.carouselView.numberOfItems];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -105,6 +110,11 @@
     }
     
     return view;
+}
+
+- (void)carouselCurrentItemIndexDidChange:(iCarousel *)carousel
+{
+    [self updateTitle];
 }
 
 - (NSUInteger)numberOfPlaceholdersInCarousel:(iCarousel *)carousel

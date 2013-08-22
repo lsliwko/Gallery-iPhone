@@ -223,18 +223,18 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"Selected row %i", indexPath.item);
-    [self performSegueWithIdentifier:@"artistImagesCarouselViewSegueId" sender:self];
+    [self performSegueWithIdentifier:@"artistDetailViewSegueId" sender:self];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NSLog(@"prepareForSegue: %@", segue.identifier);
     
-    if ([segue.identifier isEqualToString:@"artistImagesCarouselViewSegueId"])
+    if ([segue.identifier isEqualToString:@"artistDetailViewSegueId"])
     {
         ArtistObject *artistObject = [self.artists objectAtIndex:[self.tableView indexPathForSelectedRow].row];
         
-        GalleryArtistImagesCarouselViewController *viewController = [segue destinationViewController];
+        GalleryArtistDetailViewController *viewController = [segue destinationViewController];
         viewController.artistObject = artistObject;
     }
 }
