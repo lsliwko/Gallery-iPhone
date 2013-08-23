@@ -38,7 +38,7 @@
     self.navigationItem.leftBarButtonItem = backButton;
     
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]
-                                  initWithImage:[UIImage imageNamed:@"photo-album-white.png"]
+                                  initWithImage:[UIImage imageNamed:@"screen-anchor-point-mini-white.png"]
                                   style:UIBarButtonItemStyleBordered
                                   target:self
                                   action:@selector(imageGalleryAction)];
