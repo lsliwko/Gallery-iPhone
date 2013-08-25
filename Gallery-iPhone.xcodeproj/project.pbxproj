@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9703302217CA24C100E40BB1 /* gesture-swipe.png in Resources */ = {isa = PBXBuildFile; fileRef = 9703302117CA24C100E40BB1 /* gesture-swipe.png */; };
 		970C359117C13DD8003B3242 /* children-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C358F17C13DD8003B3242 /* children-white.png */; };
 		970C359217C13DD8003B3242 /* children-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C359017C13DD8003B3242 /* children-white@2x.png */; };
 		970C359517C13E95003B3242 /* stamp-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C359317C13E95003B3242 /* stamp-white.png */; };
@@ -169,6 +170,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9703302117CA24C100E40BB1 /* gesture-swipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture-swipe.png"; sourceTree = "<group>"; };
 		970C358F17C13DD8003B3242 /* children-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "children-white.png"; sourceTree = "<group>"; };
 		970C359017C13DD8003B3242 /* children-white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "children-white@2x.png"; sourceTree = "<group>"; };
 		970C359317C13E95003B3242 /* stamp-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stamp-white.png"; sourceTree = "<group>"; };
@@ -453,6 +455,7 @@
 		970C35C117C15C9B003B3242 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				9703302117CA24C100E40BB1 /* gesture-swipe.png */,
 				9717C6D917C741DA00E42F57 /* screen-anchor-point-mini-white.png */,
 				9717C6DA17C741DA00E42F57 /* screen-anchor-point-mini-white@2x.png */,
 				9717C6D717C6D6B700E42F57 /* photo-album-white@2x.png */,
@@ -952,6 +955,7 @@
 				9717C6D817C6D6B700E42F57 /* photo-album-white@2x.png in Resources */,
 				9717C6DB17C741DA00E42F57 /* screen-anchor-point-mini-white.png in Resources */,
 				9717C6DC17C741DA00E42F57 /* screen-anchor-point-mini-white@2x.png in Resources */,
+				9703302217CA24C100E40BB1 /* gesture-swipe.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

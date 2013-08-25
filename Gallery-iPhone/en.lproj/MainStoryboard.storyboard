@@ -561,13 +561,21 @@
                                     <outlet property="delegate" destination="DMp-GS-XPw" id="fqd-rP-gme"/>
                                 </connections>
                             </view>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" image="gesture-swipe.png" translatesAutoresizingMaskIntoConstraints="NO" id="c5m-VT-58w">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="394-3d-5cV"/>
+                                    <constraint firstAttribute="width" constant="60" id="z2j-lt-W04"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0LL-hl-quS" firstAttribute="trailing" secondItem="xLe-ls-v4b" secondAttribute="trailing" type="default" id="DP7-b7-22b"/>
-                            <constraint firstItem="0LL-hl-quS" firstAttribute="top" secondItem="xLe-ls-v4b" secondAttribute="top" type="default" id="GTI-zs-s3b"/>
-                            <constraint firstItem="0LL-hl-quS" firstAttribute="leading" secondItem="xLe-ls-v4b" secondAttribute="leading" type="default" id="Q4l-Sa-axs"/>
-                            <constraint firstItem="0LL-hl-quS" firstAttribute="bottom" secondItem="xLe-ls-v4b" secondAttribute="bottom" type="default" id="lQD-el-Y5g"/>
+                            <constraint firstItem="0LL-hl-quS" firstAttribute="trailing" secondItem="xLe-ls-v4b" secondAttribute="trailing" type="default" id="NSI-e7-fgn"/>
+                            <constraint firstItem="0LL-hl-quS" firstAttribute="bottom" secondItem="xLe-ls-v4b" secondAttribute="bottom" type="default" id="NXS-CN-SkB"/>
+                            <constraint firstAttribute="trailing" secondItem="c5m-VT-58w" secondAttribute="trailing" constant="5" id="ads-gd-1q3"/>
+                            <constraint firstItem="0LL-hl-quS" firstAttribute="leading" secondItem="xLe-ls-v4b" secondAttribute="leading" type="default" id="c2Z-Ba-a1M"/>
+                            <constraint firstItem="0LL-hl-quS" firstAttribute="top" secondItem="xLe-ls-v4b" secondAttribute="top" type="default" id="nVj-Z5-fGL"/>
+                            <constraint firstAttribute="bottom" secondItem="c5m-VT-58w" secondAttribute="bottom" constant="7" id="u8f-b8-Kf2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="unj-mL-brh"/>
@@ -604,6 +612,7 @@
     <resources>
         <image name="bald-man-white.png" width="30" height="30"/>
         <image name="email-white.png" width="30" height="30"/>
+        <image name="gesture-swipe.png" width="256" height="256"/>
         <image name="image-frame.png" width="300" height="300"/>
         <image name="logo.png" width="260" height="45"/>
         <image name="question-white.png" width="30" height="30"/>
