@@ -448,18 +448,33 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="abp-5T-K6H">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="ArtistsTableCell" rowHeight="50" id="uQ2-Ha-FPI">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="50"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="ArtistsTableCell" rowHeight="70" id="uQ2-Ha-FPI">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="201" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABA-tV-CFq">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="201" contentMode="left" text="Artist name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABA-tV-CFq">
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="300" id="bWG-a5-YjC"/>
+                                                        <constraint firstAttribute="height" constant="21" id="CCC-Hz-2dq"/>
+                                                        <constraint firstAttribute="width" constant="235" id="dc4-N2-GBO"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" tag="203" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7kx-Tw-hub">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="56" id="mEF-3O-T1Y"/>
+                                                        <constraint firstAttribute="width" constant="56" id="vzM-XA-gFw"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="202" contentMode="left" text="Label looooong text loooooong text looooong text" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="235" translatesAutoresizingMaskIntoConstraints="NO" id="YSA-54-fAJ">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="27" id="UR4-BS-zEQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
@@ -467,8 +482,13 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="ABA-tV-CFq" firstAttribute="top" secondItem="uQ2-Ha-FPI" secondAttribute="top" constant="14" id="2Jw-Ax-vau"/>
-                                            <constraint firstItem="ABA-tV-CFq" firstAttribute="centerX" secondItem="uQ2-Ha-FPI" secondAttribute="centerX" type="default" id="pX7-l1-PPR"/>
+                                            <constraint firstItem="YSA-54-fAJ" firstAttribute="trailing" secondItem="ABA-tV-CFq" secondAttribute="trailing" type="default" id="4jA-7F-ZHr"/>
+                                            <constraint firstItem="ABA-tV-CFq" firstAttribute="top" secondItem="uQ2-Ha-FPI" secondAttribute="top" constant="8" id="6rX-AY-a5V"/>
+                                            <constraint firstItem="ABA-tV-CFq" firstAttribute="leading" secondItem="7kx-Tw-hub" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="MBw-zA-4dz"/>
+                                            <constraint firstItem="7kx-Tw-hub" firstAttribute="leading" secondItem="uQ2-Ha-FPI" secondAttribute="leading" constant="7" id="TZh-hx-d4P"/>
+                                            <constraint firstItem="YSA-54-fAJ" firstAttribute="top" secondItem="uQ2-Ha-FPI" secondAttribute="top" constant="33" id="ZF6-im-ihW"/>
+                                            <constraint firstItem="YSA-54-fAJ" firstAttribute="leading" secondItem="7kx-Tw-hub" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="m6D-OG-t6p"/>
+                                            <constraint firstItem="7kx-Tw-hub" firstAttribute="centerY" secondItem="uQ2-Ha-FPI" secondAttribute="centerY" type="default" id="tFq-Q3-Ixb"/>
                                         </constraints>
                                     </tableViewCell>
                                 </prototypes>
@@ -503,10 +523,22 @@
                     <view key="view" contentMode="scaleToFill" id="i9V-Xw-45J">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="56b-0M-jZf">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="56b-0M-jZf" firstAttribute="top" secondItem="i9V-Xw-45J" secondAttribute="top" type="default" id="CgQ-XX-cja"/>
+                            <constraint firstItem="56b-0M-jZf" firstAttribute="leading" secondItem="i9V-Xw-45J" secondAttribute="leading" type="default" id="Uka-Px-wsF"/>
+                            <constraint firstItem="56b-0M-jZf" firstAttribute="bottom" secondItem="i9V-Xw-45J" secondAttribute="bottom" type="default" id="eJL-We-fGo"/>
+                            <constraint firstItem="56b-0M-jZf" firstAttribute="trailing" secondItem="i9V-Xw-45J" secondAttribute="trailing" type="default" id="ger-nW-4Vy"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BcG-qD-J7s"/>
                     <connections>
+                        <outlet property="webView" destination="56b-0M-jZf" id="0SA-Jv-XNu"/>
                         <segue destination="DMp-GS-XPw" kind="push" identifier="artistImagesCarouselViewSegueId" id="5eZ-8W-sXz"/>
                     </connections>
                 </viewController>
@@ -577,6 +609,73 @@
         <image name="question-white.png" width="30" height="30"/>
         <image name="stamp-white.png" width="30" height="30"/>
     </resources>
+    <classes>
+        <class className="GalleryAboutViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryAboutViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="GalleryArtistDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryArtistDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="GalleryArtistImagesCarouselViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryArtistImagesCarouselViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="carouselView" candidateClass="iCarousel"/>
+            </relationships>
+        </class>
+        <class className="GalleryArtistsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryArtistsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="GalleryContactViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryContactViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="contactAction:"/>
+                <relationship kind="action" name="openPageAction:"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="GalleryExhibitionDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryExhibitionDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="catalogueAction:"/>
+                <relationship kind="action" name="openPageAction:"/>
+                <relationship kind="outlet" name="catalogueButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="GalleryExhibitionsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryExhibitionsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="GalleryMapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryMapViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="iCarousel" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iCarousel.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dataSource"/>
+                <relationship kind="outlet" name="delegate"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

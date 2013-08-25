@@ -171,8 +171,20 @@
     
     // Configure Cell
     UILabel *nameLabel = (UILabel *)[cell.contentView viewWithTag:201];
+    UILabel *descriptionLabel = (UILabel *)[cell.contentView viewWithTag:202];
+    UIImageView *imageView  = (UIImageView *)[cell.contentView viewWithTag:203];
     
     [nameLabel setText:artistObject.name];
+    [descriptionLabel setText:artistObject.description];
+    
+    if (artistObject.imageUrls.count>0) {
+        [GUIUtilities loadImageViewAsync:self
+                             uiImageView:imageView
+                                imageUrl:[artistObject.imageUrls objectAtIndex:0]
+                        placeholderImage:[UIImage imageNamed:@"placeholder.png"]
+                             forceResize:NO
+         ];
+    }
     
     cell.contentView.backgroundColor = [UIColor whiteColor];
     
@@ -219,6 +231,11 @@
  */
 
 #pragma mark - Table view delegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 70;
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {

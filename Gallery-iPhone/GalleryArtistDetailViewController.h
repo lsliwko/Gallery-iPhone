@@ -13,4 +13,5 @@
 
 @property (strong) ArtistObject *artistObject;
 
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 @end

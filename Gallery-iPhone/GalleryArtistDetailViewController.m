@@ -44,6 +44,35 @@
                                   action:@selector(imageGalleryAction)];
     self.navigationItem.rightBarButtonItem = rightItem;
     
+    NSString *path = [[NSBundle mainBundle] bundlePath];
+    NSURL *baseURL = [NSURL fileURLWithPath:path];
+    
+    NSString* webContent = [NSString stringWithFormat:@"<html>\n"
+                            "<head>\n"
+                            "</head>\n"
+                            "<body>"
+                            "<div id='wrapper' style='width:100%%; text-align:center'>"
+                            "<img src='hua-logo2.jpg'>"
+                            "</div>"
+                            "<p class='title' align='center'><b>%@</b></p>"
+                            "<p align='justify'>%@</p>"
+                            "<div id='wrapper' style='width:100%%; text-align:center'>"
+                            "<img src='hua-logo2.jpg'>"
+                            "</div>"
+                            "</body>"
+                            "</html>",
+                            self.artistObject.name,
+                            self.artistObject.description
+                            ];
+
+    [self.webView loadHTMLString:webContent baseURL:baseURL];
+    
+    //NSString *filePath = [[GallerySettingsManager sharedManager] aboutPageFilePath];
+    //NSData *htmlData = [NSData dataWithContentsOfFile:filePath];
+    //if (htmlData) {
+    //    [self.webView loadData:htmlData MIMEType:@"text/html" textEncodingName:@"UTF-8" baseURL:baseURL];
+    //}
+    
     self.title  = self.artistObject.name;
 }
 
@@ -74,5 +103,9 @@
         GalleryArtistImagesCarouselViewController *viewController = [segue destinationViewController];
         viewController.artistObject = self.artistObject;
     }
+}
+- (void)viewDidUnload {
+    [self setWebView:nil];
+    [super viewDidUnload];
 }
 @end
