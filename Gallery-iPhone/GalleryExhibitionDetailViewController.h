@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "ExhibitionObject.h"
+#import <MessageUI/MFMailComposeViewController.h>
 
 
-@interface GalleryExhibitionDetailViewController : UIViewController
+@interface GalleryExhibitionDetailViewController : UIViewController <UIActionSheetDelegate, MFMailComposeViewControllerDelegate>
 
 @property (strong) ExhibitionObject *exhibitionObject;
 

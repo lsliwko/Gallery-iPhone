@@ -8,7 +8,9 @@
 
 #import "GalleryExhibitionDetailViewController.h"
 #import "GUIUtilities.h"
-#import "SHK.h"
+#import <Social/Social.h>
+#import <Accounts/Accounts.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
 @interface GalleryExhibitionDetailViewController ()
 
@@ -80,17 +82,114 @@
 - (void)shareAction
 {
     NSLog(@"shareAction");
-
-    // Create the item to share (in this example, a url)
-	NSURL *url = [NSURL URLWithString:self.exhibitionObject.pageUrl];
-	SHKItem *item = [SHKItem URL:url title:@"Shared from gallery"];
     
-	// Get the ShareKit action sheet
-	SHKActionSheet *actionSheet = [SHKActionSheet actionSheetForItem:item];
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]
+                                  initWithTitle:@"Share via"
+                                  delegate:self
+                                  cancelButtonTitle:@"Cancel"
+                                  destructiveButtonTitle:nil
+                                  otherButtonTitles:@"Facebook", @"Twitter", @"Email", nil];
     
-	// Display the action sheet
-	[actionSheet showFromToolbar:self.navigationController.toolbar];
+    [actionSheet showFromTabBar:[[self tabBarController] tabBar]];
+}
 
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"actionSheet button index=%i", buttonIndex);
+    
+    NSString *serviceType;
+    switch (buttonIndex)
+    {
+        case 0:
+            serviceType =   SLServiceTypeFacebook;
+            break;
+        case 1:
+            serviceType =   SLServiceTypeTwitter;
+            break;
+        case 2:
+            serviceType =   @"Email";
+            break;
+        default:
+            return;
+    }
+    
+    if ([serviceType isEqualToString:@"Email"]) {
+        if ([MFMailComposeViewController canSendMail]) {
+            MFMailComposeViewController *emailController = [[MFMailComposeViewController alloc] init];
+            
+            emailController.mailComposeDelegate = self;
+            
+            [emailController setSubject:self.exhibitionObject.title];
+            
+            NSMutableString *htmlMsg = [NSMutableString string];
+            [htmlMsg appendString:@"<html><body>"];
+            
+            if ((self.exhibitionObject.imageUrl)&&(self.imageView.image)) {
+                NSData *jpegData = UIImageJPEGRepresentation(self.imageView.image, 1);
+                
+                NSString *fileName = @"photo";
+                fileName = [fileName stringByAppendingPathExtension:@"jpeg"];
+                [emailController addAttachmentData:jpegData mimeType:@"image/jpeg" fileName:fileName];
+            }
+            
+            if (self.exhibitionObject.pageUrl) {
+                [htmlMsg appendString:@"<p>"];
+                [htmlMsg appendString:self.exhibitionObject.pageUrl];
+                [htmlMsg appendString:@"</p>"];
+            }
+            [htmlMsg appendString:@"</body></html>"];
+            
+            [emailController setMessageBody:htmlMsg isHTML:YES];
+            
+            [self presentViewController:emailController animated:YES completion:nil];
+        }
+        // Show error if no mail account is active
+        else {
+            UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"You must have a mail account in order to send an email" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alertView show];
+        }
+    } else {
+        if ([SLComposeViewController isAvailableForServiceType:serviceType])
+        {
+            SLComposeViewController *composeViewController = [SLComposeViewController composeViewControllerForServiceType:serviceType];
+            
+            NSString *textToShare = self.exhibitionObject.title;
+            
+            [composeViewController setInitialText:textToShare];
+            
+            //check if there is image and if image has been loaded
+            if ((self.exhibitionObject.imageUrl)&&(self.imageView.image)) {
+                [composeViewController addImage:self.imageView.image];
+            }
+            
+            if (self.exhibitionObject.pageUrl) {
+                [composeViewController addURL:[NSURL URLWithString:self.exhibitionObject.pageUrl]];
+            }
+            
+            [self presentViewController:composeViewController animated:YES completion:nil];
+            
+        }
+        else{
+            
+            NSString* alertString = @"Please add a Twitter/Facebook account for the network you plan to share to. You can do this in the Settings app";
+            
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Add account" message:alertString delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            
+            [alertView show];
+        }
+    }
+}
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller
+          didFinishWithResult:(MFMailComposeResult)result
+                        error:(NSError*)error
+{
+    if (result == MFMailComposeResultFailed) {
+        [GUIUtilities showErrorMessage:self message:@"Failed sending mail"];
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    return;
 }
 
 - (IBAction)catalogueAction:(id)sender {

@@ -7,8 +7,6 @@
 //
 
 #import "GalleryContactViewController.h"
-#import <MessageUI/MessageUI.h>
-#import <MessageUI/MFMailComposeViewController.h>
 #import "GUIUtilities.h"
 #import "GallerySettingsManager.h"
 
@@ -65,25 +63,9 @@
 }
 
 - (IBAction)contactAction:(id)sender {
-    NSString *email = [[GallerySettingsManager sharedManager] email];
-    
-    /*
     NSLog(@"contactAction");
     
-    // create mail subject
-    NSString *subject = [NSString stringWithFormat:@""];
-    
-    // define email address
-    NSString *mail = [NSString stringWithFormat:email];
-    
-    // create the URL
-    NSURL *url = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"mailto:?to=%@&subject=%@",
-                                                [mail stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding],
-                                                [subject stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]]];
-    
-    // load the URL
-    [[UIApplication sharedApplication] openURL:url];
-    */
+    NSString *email = [[GallerySettingsManager sharedManager] email];
     
     if ([MFMailComposeViewController canSendMail]) {
         MFMailComposeViewController *emailController = [[MFMailComposeViewController alloc] init];
