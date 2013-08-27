@@ -581,6 +581,7 @@
                     <navigationItem key="navigationItem" id="unj-mL-brh"/>
                     <connections>
                         <outlet property="carouselView" destination="0LL-hl-quS" id="qYH-HU-p1w"/>
+                        <outlet property="swipeGestureImageView" destination="c5m-VT-58w" id="beE-8G-UnR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Med-XV-cYz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -618,73 +619,6 @@
         <image name="question-white.png" width="30" height="30"/>
         <image name="stamp-white.png" width="30" height="30"/>
     </resources>
-    <classes>
-        <class className="GalleryAboutViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryAboutViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="GalleryArtistDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryArtistDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="GalleryArtistImagesCarouselViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryArtistImagesCarouselViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="carouselView" candidateClass="iCarousel"/>
-            </relationships>
-        </class>
-        <class className="GalleryArtistsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryArtistsViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="GalleryContactViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryContactViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="contactAction:"/>
-                <relationship kind="action" name="openPageAction:"/>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="GalleryExhibitionDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryExhibitionDetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="catalogueAction:"/>
-                <relationship kind="action" name="openPageAction:"/>
-                <relationship kind="outlet" name="catalogueButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="GalleryExhibitionsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryExhibitionsViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="GalleryMapViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryMapViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="iCarousel" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iCarousel.h"/>
-            <relationships>
-                <relationship kind="outlet" name="dataSource"/>
-                <relationship kind="outlet" name="delegate"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

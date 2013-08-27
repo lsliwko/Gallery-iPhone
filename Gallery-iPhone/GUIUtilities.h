@@ -19,4 +19,6 @@
 
 +(void) loadImageViewAsync:(UIViewController*)uiViewController uiImageView:(UIImageView*)uiImageView imageUrl:(NSString *)imageUrl placeholderImage:(UIImage*)placeholderImage forceResize:(Boolean *)forceResize;
 
++(void) initBlinking:(UIView *)view;
+
 @end

@@ -19,6 +19,29 @@
 //    return viewsMessageLabelsMap;
 //}
 
+
++(void) initBlinking:(UIView *)view
+{
+    
+    __weak UIView *weakView = view;
+    
+    // Update the UI
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [weakView setAlpha:0.0];
+        [UIView animateWithDuration:2.0
+                              delay:0
+                            options:UIViewAnimationOptionCurveLinear | UIViewAnimationOptionAllowUserInteraction |
+         UIViewAnimationOptionAutoreverse |
+         UIViewAnimationOptionRepeat
+                         animations:^(void) {
+                             [weakView setAlpha:0.6];
+                         }
+                         completion:nil];
+        
+    });
+}
+
+
 +(UIView*) showErrorMessage:(UIViewController*)uiViewController message:(NSString *)message {
     AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
     return [GUIUtilities showMessage:uiViewController message:message foregroundColor:[UIColor whiteColor] backgroundColor:[UIColor redColor]];

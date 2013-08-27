@@ -45,6 +45,12 @@
 
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    NSLog(@"Refreshing view...");
+    [GUIUtilities initBlinking:self.swipeGestureImageView];
+}
+
 - (void)backAction
 {
     NSLog(@"actionBack");
@@ -64,6 +70,7 @@
 
 - (void)viewDidUnload {
     [self setCarouselView:nil];
+    [self setSwipeGestureImageView:nil];
     [super viewDidUnload];
 }
 

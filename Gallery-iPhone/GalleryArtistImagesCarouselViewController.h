@@ -15,5 +15,7 @@
 
 @property (strong) ArtistObject *artistObject;
 
+@property (weak, nonatomic) IBOutlet UIImageView *swipeGestureImageView;
+
 @property (weak, nonatomic) IBOutlet iCarousel *carouselView;
 @end
